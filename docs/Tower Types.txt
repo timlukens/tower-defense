@@ -1,0 +1,25 @@
+		Name			Description								Damage	Speed
+
+Stone
+	1	Stone			Lobs basic rocks, possibly pebbles		low		slow
+	2	Marble													med		med
+	3a	Obsidian		Shoots large black stones				high	slow
+	3b	Pumice			Shoot fast but small					low/med	fast
+
+Fire
+	1	Fire			Flying flames							low		slow
+	2	Flame       	Rapid fire flames						low		fast
+	3a	Flame Stone		Flaming boulders that stay on ground	high	slow
+	3b	Flame Spray		Like a flame thrower					med		fast
+
+Lightening
+	1	Shock			Close range shock						low		slow
+	2	Shock Burst		Throws cantrip style shocks				med		med
+	3a	Lightening		Instant kill 1 mob						high	slow
+	3b	Shock Stream	Constant stream of electricity			med		constant
+
+Ice
+	1	Snow			Snowballs								low		slow
+	2	Ice				Sharp ice chips							med		slow/med?
+	3a	Glacier			Large, jagged ice blocks				high	slow
+	3b	Icicle			Icicles spears							low/med	fast
