@@ -1,0 +1,5 @@
+To committing to git hub:
+
+git add .
+git commit -am "Message for everyone to see"
+git push origin master
