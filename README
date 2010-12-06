@@ -1,6 +1,4 @@
-To committing to git hub:
-
-boobs
+For committing to git hub:
 
 git add .
 git commit -am "Message for everyone to see"
