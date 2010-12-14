@@ -73,7 +73,8 @@
 }
 
 -(void)gameLogic:(ccTime)dt {
-	[self addTarget];
+	if(gameStarted_)
+		[self addTarget];
 }
 
 - (void)ccTouchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
@@ -96,21 +97,45 @@
 									   target.contentSize.height - (target.contentSize.height/2));
 		if(CGRectIntersectsRect(playerRect, targetRect))
 		{
-			[self end];
+			[self setUpMenus];
 		}
 	}
 }
 
--(void)end {
-	CCLabel* label = [[CCLabel alloc] initWithString:@"Game Over!" fontName:@"Marker Felt" fontSize:64];
-	CGSize size = [[CCDirector sharedDirector] winSize];
-	label.position =  ccp( size.width /2 , size.height/2 );
+
+-(void)newGame:(id)sender {
+	[self removeChild:menu_ cleanup:YES];
+	for(CCSprite* target in targets_) {
+		[self removeChild:target cleanup:YES];
+	}
+	[targets_ removeAllObjects];
+	gameStarted_ = YES;
+	[[CCDirector sharedDirector] resume];
+}
+
+-(void)quit:(id)sender {
+	exit(0);
+}
+
+-(void)setUpMenus {
+	gameStarted_ = NO;
 	ccColor3B labelColor;
 	labelColor.r = 255;
 	labelColor.g = 0;
 	labelColor.b = 0;
-	label.color = labelColor;
-	[self addChild:label];
+	
+	CCLabel* ngLabel = [[CCLabel alloc] initWithString:@"New Game" fontName:@"Marker Felt" fontSize:64];
+	CCLabel* qLabel = [[CCLabel alloc] initWithString:@"Quit" fontName:@"Marker Felt" fontSize:64];
+	
+	ngLabel.color = labelColor;
+	qLabel.color = labelColor;
+	
+	CCMenuItemLabel *newGame = [CCMenuItemLabel itemWithLabel:ngLabel target:self selector:@selector(newGame:)];
+	CCMenuItemLabel *quit = [CCMenuItemLabel itemWithLabel:qLabel target:self selector:@selector(quit:)];
+	
+	menu_ = [CCMenu menuWithItems:newGame, quit, nil];
+	[menu_ alignItemsVertically];
+	[self addChild:menu_];
 	[[CCDirector sharedDirector] pause];
 }
 
@@ -124,6 +149,8 @@
 		
 		targets_ = [[NSMutableArray alloc] init];
 		player_ = [[MyPlayer alloc] init];
+		
+		[self setUpMenus];
 
 		[self addChild:player_.sprite];
 		[self schedule:@selector(gameLogic:) interval:1.0];

@@ -18,7 +18,7 @@
 @synthesize width = width_;
 
 -(id) init {
-	if([super init]) {
+	if((self=[super init])) {
 		sprite_ = [CCSprite spriteWithFile:@"Player.png"
 										   rect:CGRectMake(0, 0, 27, 40)];
 		x_ = sprite_.contentSize.width / 2;

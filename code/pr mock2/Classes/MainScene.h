@@ -16,6 +16,8 @@
 {
 	NSMutableArray *targets_;
 	MyPlayer* player_;
+	bool gameStarted_;
+	CCMenu* menu_;
 }
 
 // returns a Scene that contains the Main as the only child
@@ -25,6 +27,8 @@
 -(void)addTarget;
 -(void)gameLogic:(ccTime)dt;
 -(void)update:(ccTime)dt;
--(void)end;
+-(void)setUpMenus;
+-(void)quit:(id)sender;
+-(void)newGame:(id)sender;
 
 @end
