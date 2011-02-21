@@ -36,12 +36,30 @@ static Game* gGameScene = nil;
 	if( (self=[super init] )) {
 		level_ = [[Level node] initWithLevel:1];
 		[self addChild:level_ z:-1];
+		self.isTouchEnabled = YES;
 	}
 	return self;
+}
+
+-(void) registerWithTouchDispatcher
+{
+	[[CCTouchDispatcher sharedDispatcher] addTargetedDelegate:self 
+													 priority:0 swallowsTouches:YES];
+}
+
+-(BOOL) ccTouchBegan:(UITouch *)touch withEvent:(UIEvent *)event
+{
+	return YES;
+}
+
+-(void) ccTouchEnded:(UITouch *)touch withEvent:(UIEvent *)event
+{
+	[level_ ccTouchEnded:touch withEvent:event];
 }
 
 - (void) dealloc
 {
 	[super dealloc];
 }
+
 @end

@@ -17,6 +17,7 @@
 	CGPoint spawnPoint_;
 	
 	NSMutableArray* enemies_;
+	NSMutableArray* towers_;
 }
 
 @property (nonatomic, retain) CCTMXTiledMap* tileMap;

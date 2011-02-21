@@ -8,6 +8,7 @@
 
 #import "Level.h"
 #import "Enemy.h"
+#import "Tower.h"
 
 
 @implementation Level
@@ -19,6 +20,7 @@
 -(id)initWithLevel:(NSUInteger)level {
 	if( (self=[super init]) ) {
 		enemies_ = [[NSMutableArray alloc] init];
+		towers_ = [[NSMutableArray alloc] init];
 		
 		tileMap_ = [CCTMXTiledMap tiledMapWithTMXFile:[NSString stringWithFormat:@"level%d.tmx", level]];
 		background_ = [tileMap_ layerNamed:@"Background"];
@@ -38,6 +40,8 @@
 	return self;
 }
 
+#pragma mark ticks
+
 -(void)gameLogic:(ccTime)dt {
 	Enemy* enemy = [[Enemy node] init];
 	enemy.position = ccp(spawnPoint_.x, spawnPoint_.y);
@@ -51,10 +55,47 @@
 	}
 }
 
+#pragma mark utils
+
 -(CGPoint)tileCoordForPosition:(CGPoint)position {
     int x = position.x / tileMap_.tileSize.width;
     int y = ((tileMap_.mapSize.height * tileMap_.tileSize.height) - position.y) / tileMap_.tileSize.height;
     return ccp(x, y);
 }
+
+#pragma mark Touches
+
+-(void) registerWithTouchDispatcher
+{
+	[[CCTouchDispatcher sharedDispatcher] addTargetedDelegate:self 
+													 priority:0 swallowsTouches:YES];
+}
+
+-(BOOL) ccTouchBegan:(UITouch *)touch withEvent:(UIEvent *)event
+{
+	return YES;
+}
+
+-(void) ccTouchEnded:(UITouch *)touch withEvent:(UIEvent *)event
+{
+    CGPoint touchLocation = [touch locationInView: [touch view]];		
+    touchLocation = [[CCDirector sharedDirector] convertToGL: touchLocation];
+    touchLocation = [self convertToNodeSpace:touchLocation];
+	
+	CGPoint tileCoord = [self tileCoordForPosition:touchLocation];
+	int tileGid = [meta_ tileGIDAt:tileCoord];
+	
+	NSDictionary *properties = [tileMap_ propertiesForGID:tileGid];
+	if (properties) {
+		//if tower available
+		NSString *available = [properties valueForKey:@"TowerAvailable"];
+		if (available && [available compare:@"true"] == NSOrderedSame) {
+			Tower* tower = [[Tower alloc] initWithPosition:[meta_ positionAt:tileCoord]];
+			[towers_ addObject:tower];
+			[self addChild:tower];
+		}
+	}
+}
+
 
 @end

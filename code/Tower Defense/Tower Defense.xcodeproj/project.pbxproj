@@ -222,6 +222,8 @@
 		898477861312F1C700019238 /* tmw_desert_spacing.png in Resources */ = {isa = PBXBuildFile; fileRef = 898477831312F1C700019238 /* tmw_desert_spacing.png */; };
 		898477B61312F5BE00019238 /* Enemy.m in Sources */ = {isa = PBXBuildFile; fileRef = 898477B51312F5BE00019238 /* Enemy.m */; };
 		898477B81312F6FE00019238 /* enemy.png in Resources */ = {isa = PBXBuildFile; fileRef = 898477B71312F6FE00019238 /* enemy.png */; };
+		8984791313131AAC00019238 /* Tower.m in Sources */ = {isa = PBXBuildFile; fileRef = 8984791213131AAC00019238 /* Tower.m */; };
+		8984791513131AF700019238 /* towersketch.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8984791413131AF700019238 /* towersketch.jpg */; };
 		DC6640030F83B3EA000B3E49 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC6640020F83B3EA000B3E49 /* AudioToolbox.framework */; };
 		DC6640050F83B3EA000B3E49 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC6640040F83B3EA000B3E49 /* OpenAL.framework */; };
 		DCCBF1B70F6022AE0040855A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCCBF1B60F6022AE0040855A /* CoreGraphics.framework */; };
@@ -459,6 +461,9 @@
 		898477B41312F5BE00019238 /* Enemy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Enemy.h; sourceTree = "<group>"; };
 		898477B51312F5BE00019238 /* Enemy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Enemy.m; sourceTree = "<group>"; };
 		898477B71312F6FE00019238 /* enemy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = enemy.png; sourceTree = "<group>"; };
+		8984791113131AAC00019238 /* Tower.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tower.h; sourceTree = "<group>"; };
+		8984791213131AAC00019238 /* Tower.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tower.m; sourceTree = "<group>"; };
+		8984791413131AF700019238 /* towersketch.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = towersketch.jpg; sourceTree = "<group>"; };
 		DC6640020F83B3EA000B3E49 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		DC6640040F83B3EA000B3E49 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
 		DCCBF1B60F6022AE0040855A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -563,6 +568,8 @@
 				898477511312EF5500019238 /* Level.m */,
 				898477B41312F5BE00019238 /* Enemy.h */,
 				898477B51312F5BE00019238 /* Enemy.m */,
+				8984791113131AAC00019238 /* Tower.h */,
+				8984791213131AAC00019238 /* Tower.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -839,6 +846,7 @@
 		50F414EB1069373D002A0D5E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				8984791413131AF700019238 /* towersketch.jpg */,
 				898477B71312F6FE00019238 /* enemy.png */,
 				898477811312F1C700019238 /* level1.tmx */,
 				898477821312F1C700019238 /* meta_tiles.png */,
@@ -1039,6 +1047,7 @@
 				898477851312F1C700019238 /* meta_tiles.png in Resources */,
 				898477861312F1C700019238 /* tmw_desert_spacing.png in Resources */,
 				898477B81312F6FE00019238 /* enemy.png in Resources */,
+				8984791513131AF700019238 /* towersketch.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1054,6 +1063,7 @@
 				506EDC31102F528A00A389B3 /* GameScene.m in Sources */,
 				898477521312EF5500019238 /* Level.m in Sources */,
 				898477B61312F5BE00019238 /* Enemy.m in Sources */,
+				8984791313131AAC00019238 /* Tower.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

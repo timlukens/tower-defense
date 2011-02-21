@@ -10,6 +10,7 @@
 #import "GameScene.h"
 
 #define kEnemyMoveTime 0.2f
+#define kSpriteSize 32.f
 
 @implementation Enemy
 
