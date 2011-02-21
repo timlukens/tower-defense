@@ -18,9 +18,16 @@
 		sprite_ = [CCSprite spriteWithFile:@"towersketch.jpg"];
 		sprite_.scale = (1./5.25);
 		[self addChild:sprite_];
+		
 		self.position = CGPointMake(position.x + kSpriteOffset, position.y + kSpriteOffset);
+		
+		[self schedule:@selector(fire:) interval:.5f];
 	}
 	return self;
+}
+
+-(void)fire:(id)sender {
+	NSLog(@"pew pew");
 }
 
 @end
