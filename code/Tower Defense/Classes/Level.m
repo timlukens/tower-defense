@@ -75,13 +75,11 @@
 													 priority:0 swallowsTouches:YES];
 }
 
--(BOOL) ccTouchBegan:(UITouch *)touch withEvent:(UIEvent *)event
-{
+-(BOOL) ccTouchBegan:(UITouch *)touch withEvent:(UIEvent *)event {
 	return YES;
 }
 
--(void) ccTouchEnded:(UITouch *)touch withEvent:(UIEvent *)event
-{
+-(void) ccTouchEnded:(UITouch *)touch withEvent:(UIEvent *)event {
     CGPoint touchLocation = [touch locationInView: [touch view]];		
     touchLocation = [[CCDirector sharedDirector] convertToGL: touchLocation];
     touchLocation = [self convertToNodeSpace:touchLocation];

@@ -25,6 +25,8 @@
 		[self addChild:sprite_];
 		[[[Game gameController] level] addChild:self];
 		
+		[self loadProperties];
+		
 		id actionMove = [CCMoveTo actionWithDuration:kBoomerTime 
 											position:enemy.position];
 		id actionMoveDone = [CCCallFuncN actionWithTarget:self 
@@ -34,12 +36,21 @@
 	return self;
 }
 
+-(void)loadProperties {
+	damage_ = 250;
+}
+
 -(void)spriteMoveFinished:(id)sender {
 	for(Enemy* enemy in [[[Game gameController] level].enemies allObjects]) {
 		if(enemy == enemy_)
+			enemy.hp -= damage_;
+			
+		if(enemy.hp <= 0) {
 			[[[Game gameController] level].enemies removeObject:enemy];
+			[[[Game gameController] level] removeChild:enemy cleanup:NO];
+		}
 	}
-	[[[Game gameController] level] removeChild:enemy_ cleanup:NO];
+	
 	[[[Game gameController] level] removeChild:self cleanup:YES];
 }
 

@@ -13,6 +13,8 @@
 @interface ReallyBigKaBoomer : CCNode {
 	CCSprite* sprite_;
 	Enemy* enemy_;
+	
+	Float32 damage_;
 }
 
 -(id)initWithTarget:(Enemy*)enemy atPosition:(CGPoint)position;

@@ -11,7 +11,7 @@
 #import "ReallyBigKaBoomer.h"
 
 #define kSpriteOffset 32./2.
-#define kTowerFireTime 2.f
+#define kTowerFireTime 0.2f
 
 
 @implementation Tower

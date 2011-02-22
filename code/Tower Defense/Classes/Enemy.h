@@ -13,7 +13,11 @@
 	CCSprite* sprite_;
 	BOOL moving_;
 	BOOL kill_;
+	
+	Float32 hp_;
 }
+
+@property (nonatomic, readwrite) Float32 hp;
 
 -(void)move;
 -(CGPoint)tileCoordForPosition:(CGPoint)position;
