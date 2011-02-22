@@ -10,7 +10,7 @@
 #import "Enemy.h"
 #import "Tower.h"
 
-#define kEnemySpawnTime 5.0f
+#define kEnemySpawnTime 1.0f
 
 
 @implementation Level
@@ -18,11 +18,13 @@
 @synthesize tileMap = tileMap_;
 @synthesize meta = meta_;
 @synthesize enemies = enemies_;
+@synthesize projectiles = projectiles_;
 
 -(id)initWithLevel:(NSUInteger)level {
 	if( (self=[super init]) ) {
-		enemies_ = [[[NSMutableArray alloc] init] retain];
-		towers_ = [[[NSMutableArray alloc] init] retain];
+		enemies_ = [[NSMutableArray alloc] init];
+		towers_ = [[NSMutableArray alloc] init];
+		projectiles_ = [[NSMutableArray alloc] init];
 		
 		tileMap_ = [CCTMXTiledMap tiledMapWithTMXFile:[NSString stringWithFormat:@"level%d.tmx", level]];
 		background_ = [tileMap_ layerNamed:@"Background"];

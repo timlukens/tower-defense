@@ -8,8 +8,10 @@
 
 #import "Tower.h"
 #import "GameScene.h"
+#import "ReallyBigKaBoomer.h"
 
 #define kSpriteOffset 32./2.
+#define kTowerFireTime 2.f
 
 
 @implementation Tower
@@ -24,7 +26,7 @@
 		
 		[self loadProperties];
 		
-		[self schedule:@selector(fire:) interval:.5f];
+		[self schedule:@selector(fire:) interval:kTowerFireTime];
 	}
 	return self;
 }
@@ -38,7 +40,7 @@
 	
 	for(Enemy* enemy in [[[Game gameController] level] enemies]) {
 		if([self distanceFromEnemy:enemy] < range_) {
-			NSLog(@"pew pew");
+			ReallyBigKaBoomer* boomer = [[ReallyBigKaBoomer alloc] initWithTarget:enemy atPosition:self.position];
 		}
 	}
 }

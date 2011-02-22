@@ -216,6 +216,7 @@
 		50F414F01069373D002A0D5E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 50F414EC1069373D002A0D5E /* Default.png */; };
 		50F414F11069373D002A0D5E /* fps_images.png in Resources */ = {isa = PBXBuildFile; fileRef = 50F414ED1069373D002A0D5E /* fps_images.png */; };
 		50F414F21069373D002A0D5E /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 50F414EE1069373D002A0D5E /* Icon.png */; };
+		89230BAC13144693002BFC42 /* ReallyBigKaBoomer.m in Sources */ = {isa = PBXBuildFile; fileRef = 89230BAB13144693002BFC42 /* ReallyBigKaBoomer.m */; };
 		898477521312EF5500019238 /* Level.m in Sources */ = {isa = PBXBuildFile; fileRef = 898477511312EF5500019238 /* Level.m */; };
 		898477841312F1C700019238 /* level1.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 898477811312F1C700019238 /* level1.tmx */; };
 		898477851312F1C700019238 /* meta_tiles.png in Resources */ = {isa = PBXBuildFile; fileRef = 898477821312F1C700019238 /* meta_tiles.png */; };
@@ -453,6 +454,8 @@
 		50F414ED1069373D002A0D5E /* fps_images.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fps_images.png; sourceTree = "<group>"; };
 		50F414EE1069373D002A0D5E /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		50F414EF1069373D002A0D5E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89230BAA13144693002BFC42 /* ReallyBigKaBoomer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReallyBigKaBoomer.h; sourceTree = "<group>"; };
+		89230BAB13144693002BFC42 /* ReallyBigKaBoomer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReallyBigKaBoomer.m; sourceTree = "<group>"; };
 		898477501312EF5500019238 /* Level.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Level.h; sourceTree = "<group>"; };
 		898477511312EF5500019238 /* Level.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Level.m; sourceTree = "<group>"; };
 		898477811312F1C700019238 /* level1.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = level1.tmx; sourceTree = "<group>"; };
@@ -570,6 +573,8 @@
 				898477B51312F5BE00019238 /* Enemy.m */,
 				8984791113131AAC00019238 /* Tower.h */,
 				8984791213131AAC00019238 /* Tower.m */,
+				89230BAA13144693002BFC42 /* ReallyBigKaBoomer.h */,
+				89230BAB13144693002BFC42 /* ReallyBigKaBoomer.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -1064,6 +1069,7 @@
 				898477521312EF5500019238 /* Level.m in Sources */,
 				898477B61312F5BE00019238 /* Enemy.m in Sources */,
 				8984791313131AAC00019238 /* Tower.m in Sources */,
+				89230BAC13144693002BFC42 /* ReallyBigKaBoomer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

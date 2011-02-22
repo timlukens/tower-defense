@@ -18,11 +18,13 @@
 	
 	NSMutableArray* enemies_;
 	NSMutableArray* towers_;
+	NSMutableArray* projectiles_;
 }
 
 @property (nonatomic, retain) CCTMXTiledMap* tileMap;
 @property (nonatomic, retain) CCTMXLayer* meta;
 @property (retain, readwrite) NSMutableArray* enemies;
+@property (retain, readwrite) NSMutableArray* projectiles;
 
 -(id)initWithLevel:(NSUInteger)level;
 -(CGPoint)tileCoordForPosition:(CGPoint)position;
