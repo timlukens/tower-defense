@@ -35,7 +35,10 @@
 }
 
 -(void)spriteMoveFinished:(id)sender {
-	[[[Game gameController] level].enemies removeObject:enemy_];
+	for(Enemy* enemy in [[[Game gameController] level].enemies allObjects]) {
+		if(enemy == enemy_)
+			[[[Game gameController] level].enemies removeObject:enemy];
+	}
 	[[[Game gameController] level] removeChild:enemy_ cleanup:NO];
 	[[[Game gameController] level] removeChild:self cleanup:YES];
 }

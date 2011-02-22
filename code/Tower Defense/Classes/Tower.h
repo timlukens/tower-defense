@@ -17,5 +17,6 @@
 
 -(id)initWithPosition:(CGPoint)position;
 -(Float32)distanceFromEnemy:(Enemy*)enemy;
+-(void)loadProperties;
 
 @end
