@@ -8,11 +8,14 @@
 
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
+#import "Enemy.h"
 
 @interface Tower : CCNode {
 	CCSprite* sprite_;
+	Float32 range_;
 }
 
 -(id)initWithPosition:(CGPoint)position;
+-(Float32)distanceFromEnemy:(Enemy*)enemy;
 
 @end

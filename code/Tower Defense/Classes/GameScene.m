@@ -8,9 +8,9 @@
 
 #import "GameScene.h"
 
-static Game* gGameScene = nil;
-
 @implementation Game
+
+static Game* gGameScene = nil;
 
 @synthesize level = level_;
 
@@ -34,10 +34,11 @@ static Game* gGameScene = nil;
 -(id) init
 {
 	if( (self=[super init] )) {
-		level_ = [[Level node] initWithLevel:1];
+		self.level = [[[Level node] initWithLevel:1] retain];
 		[self addChild:level_ z:-1];
 		self.isTouchEnabled = YES;
 	}
+	gGameScene = self;
 	return self;
 }
 
@@ -60,6 +61,10 @@ static Game* gGameScene = nil;
 - (void) dealloc
 {
 	[super dealloc];
+}
+
+-(Level*)level {
+	return level_;
 }
 
 @end

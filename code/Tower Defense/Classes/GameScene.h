@@ -12,11 +12,9 @@
 
 @interface Game : CCLayer {	
 	Level* level_;
-	
-	NSMutableArray* enemies_;
 }
 
-@property (nonatomic, retain) Level* level;
+@property (readwrite, retain) Level* level;
 
 +(id) scene;
 +(Game*)gameController;

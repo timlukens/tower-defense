@@ -22,7 +22,7 @@
 
 @property (nonatomic, retain) CCTMXTiledMap* tileMap;
 @property (nonatomic, retain) CCTMXLayer* meta;
-@property (nonatomic, retain) NSMutableArray* enemies;
+@property (retain, readwrite) NSMutableArray* enemies;
 
 -(id)initWithLevel:(NSUInteger)level;
 -(CGPoint)tileCoordForPosition:(CGPoint)position;

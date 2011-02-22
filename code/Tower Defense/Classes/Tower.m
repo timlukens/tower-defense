@@ -7,6 +7,7 @@
 //
 
 #import "Tower.h"
+#import "GameScene.h"
 
 #define kSpriteOffset 32./2.
 
@@ -21,13 +22,30 @@
 		
 		self.position = CGPointMake(position.x + kSpriteOffset, position.y + kSpriteOffset);
 		
+		[self loadProperties];
+		
 		[self schedule:@selector(fire:) interval:.5f];
 	}
 	return self;
 }
 
+-(void)loadProperties {
+	range_ = 90;
+}
+
 -(void)fire:(id)sender {
-	NSLog(@"pew pew");
+	NSMutableArray* possibleTargets = [[NSMutableArray alloc] init];
+	
+	for(Enemy* enemy in [[[Game gameController] level] enemies]) {
+		if([self distanceFromEnemy:enemy] < range_) {
+			NSLog(@"pew pew");
+		}
+	}
+}
+
+-(Float32)distanceFromEnemy:(Enemy*)enemy {
+	CGPoint point = ccpSub(enemy.position, self.position);
+	return (Float32)sqrt(point.x * point.x + point.y * point.y);
 }
 
 @end

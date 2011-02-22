@@ -10,6 +10,8 @@
 #import "Enemy.h"
 #import "Tower.h"
 
+#define kEnemySpawnTime 5.0f
+
 
 @implementation Level
 
@@ -19,8 +21,8 @@
 
 -(id)initWithLevel:(NSUInteger)level {
 	if( (self=[super init]) ) {
-		enemies_ = [[NSMutableArray alloc] init];
-		towers_ = [[NSMutableArray alloc] init];
+		enemies_ = [[[NSMutableArray alloc] init] retain];
+		towers_ = [[[NSMutableArray alloc] init] retain];
 		
 		tileMap_ = [CCTMXTiledMap tiledMapWithTMXFile:[NSString stringWithFormat:@"level%d.tmx", level]];
 		background_ = [tileMap_ layerNamed:@"Background"];
@@ -35,7 +37,7 @@
 		
 		[self addChild:tileMap_ z:-1];
 		[self schedule:@selector(update:)];
-		[self schedule:@selector(gameLogic:) interval:1.0f];
+		[self schedule:@selector(gameLogic:) interval:kEnemySpawnTime];
 	}
 	return self;
 }
@@ -90,11 +92,15 @@
 		//if tower available
 		NSString *available = [properties valueForKey:@"TowerAvailable"];
 		if (available && [available compare:@"true"] == NSOrderedSame) {
-			Tower* tower = [[Tower alloc] initWithPosition:[meta_ positionAt:tileCoord]];
+			Tower* tower = [[[Tower alloc] initWithPosition:[meta_ positionAt:tileCoord]] retain];
 			[towers_ addObject:tower];
 			[self addChild:tower];
 		}
 	}
+}
+
+-(NSMutableArray*)enemies {
+	return enemies_;
 }
 
 
