@@ -1,0 +1,1232 @@
+TTower Defense
+v7
+r0
+t320097600.300449
+cCheck dependencies
+cProcessInfoPlistFile "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Debug-iphonesimulator/Tower Defense.app/Info.plist" Resources/Info.plist
+cCpResource "build/Debug-iphonesimulator/Tower Defense.app/Default.png" Resources/Default.png
+cCpResource "build/Debug-iphonesimulator/Tower Defense.app/fps_images.png" Resources/fps_images.png
+cCpResource "build/Debug-iphonesimulator/Tower Defense.app/Icon.png" Resources/Icon.png
+cCpResource "build/Debug-iphonesimulator/Tower Defense.app/level1.tmx" Resources/level1.tmx
+cCpResource "build/Debug-iphonesimulator/Tower Defense.app/meta_tiles.png" Resources/meta_tiles.png
+cCpResource "build/Debug-iphonesimulator/Tower Defense.app/tmw_desert_spacing.png" Resources/tmw_desert_spacing.png
+cCpResource "build/Debug-iphonesimulator/Tower Defense.app/enemy.png" Resources/enemy.png
+cCpResource "build/Debug-iphonesimulator/Tower Defense.app/towersketch.jpg" Resources/towersketch.jpg
+cProcessPCH /var/folders/dt/dtXcFoZKEdWMd7gf44GA3++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Tower_Defense_Prefix-cixmcxnnsnnlarclvzqthpqdcles/Tower_Defense_Prefix.pch.gch Tower_Defense_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Tower Defense.build/Debug-iphonesimulator/Tower Defense.build/Objects-normal/i386/main.o" "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/main.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Tower Defense.build/Debug-iphonesimulator/Tower Defense.build/Objects-normal/i386/Tower_DefenseAppDelegate.o" "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/Tower_DefenseAppDelegate.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Tower Defense.build/Debug-iphonesimulator/Tower Defense.build/Objects-normal/i386/GameScene.o" "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/GameScene.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Tower Defense.build/Debug-iphonesimulator/Tower Defense.build/Objects-normal/i386/Level.o" "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/Level.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Tower Defense.build/Debug-iphonesimulator/Tower Defense.build/Objects-normal/i386/Enemy.o" "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/Enemy.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Tower Defense.build/Debug-iphonesimulator/Tower Defense.build/Objects-normal/i386/Tower.o" "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/Tower.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Tower Defense.build/Debug-iphonesimulator/Tower Defense.build/Objects-normal/i386/ReallyBigKaBoomer.o" "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/ReallyBigKaBoomer.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cLd "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Debug-iphonesimulator/Tower Defense.app/Tower Defense" normal i386
+cGenerateDSYMFile "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Debug-iphonesimulator/Tower Defense.app.dSYM" "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Debug-iphonesimulator/Tower Defense.app/Tower Defense"
+cTouch "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Debug-iphonesimulator/Tower Defense.app"
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk
+c000000004CC128950000000000000110
+t1287727253
+s272
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/AVFoundation.framework/AVFoundation
+c000000004CC1288A00000000000F34A0
+t1287727242
+s996512
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
+c000000004CC1224600000000001EA9C0
+t1287725638
+s2009536
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004CC12246000000000029B310
+t1287725638
+s2732816
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGGeometry.h
+c000000004CC121DB00000000000022F0
+t1287725531
+s8944
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGImage.h
+c000000004CC121DB0000000000002650
+t1287725531
+s9808
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004CC1226D000000000029D5D0
+t1287725677
+s2741712
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004CC1225F0000000000001466
+t1287725663
+s5222
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/OpenAL.framework/OpenAL
+c000000004CC1226400000000000246A0
+t1287725668
+s149152
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/EAGL.h
+c000000004CC12308000000000000094F
+t1287725832
+s2383
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/EAGLDrawable.h
+c000000004CC123080000000000000A61
+t1287725832
+s2657
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES1/gl.h
+c000000004CC123080000000000009369
+t1287725832
+s37737
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES1/glext.h
+c000000004CC123080000000000003C4A
+t1287725832
+s15434
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/OpenGLES.framework/OpenGLES
+c000000004CC1230E0000000000019D40
+t1287725838
+s105792
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.h
+c000000004CC1233C00000000000000C4
+t1287725884
+s196
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
+c000000004CC12431000000000015CDB0
+t1287726129
+s1428912
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004CC1281F0000000000000AA1
+t1287727135
+s2721
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004CC12883000000000074D7B0
+t1287727235
+s7657392
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/include/inttypes.h
+c000000004CB3E48600000000000027D1
+t1286857862
+s10193
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/include/math.h
+c000000004A5C14A000000000000004F1
+t1247548576
+s1265
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/include/objc/objc.h
+c000000004CB935700000000000000A2F
+t1287206256
+s2607
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/include/stdlib.h
+c000000004CB3E4860000000000002DF5
+t1286857862
+s11765
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/include/string.h
+c000000004CB3E4860000000000001731
+t1286857862
+s5937
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/include/sys/time.h
+c000000004CBFACAC0000000000001E17
+t1287629996
+s7703
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/stddef.h
+c000000004A1198340000000000003197
+t1242667060
+s12695
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/lib/libz.dylib
+c000000004CC109C300000000000123B0
+t1287719363
+s74672
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/Enemy.h
+c000000004D6357700000000000000187
+t1298356080
+s391
+i<Foundation/Foundation.h>
+i"cocos2d.h"
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/Enemy.m
+c000000004D6357700000000000000AB1
+t1298356080
+s2737
+i"Enemy.h"
+i"GameScene.h"
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/GameScene.h
+c000000004D6414430000000000000138
+t1298404419
+s312
+i"cocos2d.h"
+i"Level.h"
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/GameScene.m
+c000000004D641443000000000000046D
+t1298404419
+s1133
+i"GameScene.h"
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/Level.h
+c000000004D64144300000000000002C8
+t1298404419
+s712
+i<Foundation/Foundation.h>
+i"cocos2d.h"
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/Level.m
+c000000004D6414430000000000000B2D
+t1298404419
+s2861
+i"Level.h"
+i"Enemy.h"
+i"Tower.h"
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/ReallyBigKaBoomer.h
+c000000004D64148B000000000000016F
+t1298404491
+s367
+i<Foundation/Foundation.h>
+i"cocos2d.h"
+i"Enemy.h"
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/ReallyBigKaBoomer.m
+c000000004D64148B000000000000044D
+t1298404491
+s1101
+i"ReallyBigKaBoomer.h"
+i"GameScene.h"
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/Tower.h
+c000000004D641443000000000000016C
+t1298404419
+s364
+i<Foundation/Foundation.h>
+i"cocos2d.h"
+i"Enemy.h"
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/Tower.m
+c000000004D64144300000000000004B5
+t1298404419
+s1205
+i"Tower.h"
+i"GameScene.h"
+i"ReallyBigKaBoomer.h"
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/Tower_DefenseAppDelegate.h
+c000000004D6357700000000000000146
+t1298356080
+s326
+i<UIKit/UIKit.h>
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/Tower_DefenseAppDelegate.m
+c000000004D63577000000000000009A8
+t1298356080
+s2472
+i"Tower_DefenseAppDelegate.h"
+i"cocos2d.h"
+i"GameScene.h"
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Resources/Default.png
+c000000004D63577000000000000077AB
+t1298356080
+s30635
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Resources/Icon.png
+c000000004D635770000000000000246F
+t1298356080
+s9327
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Resources/enemy.png
+c000000004D63577000000000000010E9
+t1298356080
+s4329
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Resources/fps_images.png
+c000000004D635770000000000000183B
+t1298356080
+s6203
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Resources/level1.tmx
+c000000004D6357700000000000000A9E
+t1298356080
+s2718
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Resources/meta_tiles.png
+c000000004D6357700000000000000146
+t1298356080
+s326
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Resources/tmw_desert_spacing.png
+c000000004D63577000000000000093C6
+t1298356080
+s37830
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Resources/towersketch.jpg
+c000000004D6357700000000000006F38
+t1298356080
+s28472
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Tower_Defense_Prefix.pch
+c000000004D63577000000000000000BD
+t1298356080
+s189
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Debug-iphonesimulator/Tower Defense.app
+t1298404502
+s442
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Debug-iphonesimulator/Tower Defense.app.dSYM
+t1298404502
+s102
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Debug-iphonesimulator/Tower Defense.app/Default.png
+t1298356228
+s30635
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Debug-iphonesimulator/Tower Defense.app/Icon.png
+t1298356228
+s9327
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Debug-iphonesimulator/Tower Defense.app/Info.plist
+t1298356228
+s622
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Debug-iphonesimulator/Tower Defense.app/PkgInfo
+t1298356228
+s8
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Debug-iphonesimulator/Tower Defense.app/Tower Defense
+t1298404502
+s1432056
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Debug-iphonesimulator/Tower Defense.app/enemy.png
+t1298356228
+s4329
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Debug-iphonesimulator/Tower Defense.app/fps_images.png
+t1298356228
+s6203
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Debug-iphonesimulator/Tower Defense.app/level1.tmx
+t1298356228
+s2718
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Debug-iphonesimulator/Tower Defense.app/meta_tiles.png
+t1298356228
+s326
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Debug-iphonesimulator/Tower Defense.app/tmw_desert_spacing.png
+t1298356228
+s37830
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Debug-iphonesimulator/Tower Defense.app/towersketch.jpg
+t1298356228
+s28472
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Debug-iphonesimulator/libcocos2d libraries.a
+c000000004D63580400000000003D9D30
+t1298356228
+s4037936
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Tower Defense.build/Debug-iphonesimulator/Tower Defense.build/Objects-normal/i386/Enemy.o
+t1298404442
+s24976
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Tower Defense.build/Debug-iphonesimulator/Tower Defense.build/Objects-normal/i386/GameScene.o
+t1298404442
+s54492
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Tower Defense.build/Debug-iphonesimulator/Tower Defense.build/Objects-normal/i386/Level.o
+t1298404442
+s66324
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Tower Defense.build/Debug-iphonesimulator/Tower Defense.build/Objects-normal/i386/ReallyBigKaBoomer.o
+t1298404501
+s19804
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Tower Defense.build/Debug-iphonesimulator/Tower Defense.build/Objects-normal/i386/Tower Defense.LinkFileList
+c000000004D641459000000000000047B
+t1298404441
+s1147
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Tower Defense.build/Debug-iphonesimulator/Tower Defense.build/Objects-normal/i386/Tower.o
+t1298404501
+s20524
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Tower Defense.build/Debug-iphonesimulator/Tower Defense.build/Objects-normal/i386/Tower_DefenseAppDelegate.o
+t1298404442
+s66200
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Tower Defense.build/Debug-iphonesimulator/Tower Defense.build/Objects-normal/i386/main.o
+t1298356229
+s6476
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/libs/cocos2d/CCAction.h
+c000000004D635770000000000000165C
+t1298356080
+s5724
+i<UIKit/UIKit.h>
+i<sys/time.h>
+i"ccTypes.h"
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/libs/cocos2d/CCActionManager.h
+c000000004D6357700000000000001072
+t1298356080
+s4210
+i"CCAction.h"
+i"Support/ccCArray.h"
+i"Support/uthash.h"
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/libs/cocos2d/CCAtlasNode.h
+c000000004D6357700000000000000C4A
+t1298356080
+s3146
+i"CCTextureAtlas.h"
+i"CCNode.h"
+i"CCProtocols.h"
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/libs/cocos2d/CCBitmapFontAtlas.h
+c000000004D6357700000000000001533
+t1298356080
+s5427
+i"CCAtlasNode.h"
+i"CCSpriteSheet.h"
+i"Support/uthash.h"
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/libs/cocos2d/CCBlockSupport.h
+c000000004D63577000000000000007AA
+t1298356080
+s1962
+i<Foundation/Foundation.h>
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/libs/cocos2d/CCCamera.h
+c000000004D6357700000000000000B48
+t1298356080
+s2888
+i"CCNode.h"
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/libs/cocos2d/CCCameraAction.h
+c000000004D63577000000000000009AA
+t1298356080
+s2474
+i"CCIntervalAction.h"
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/libs/cocos2d/CCCompatibility.h
+c000000004D6357700000000000003891
+t1298356080
+s14481
+i<Foundation/Foundation.h>
+i"cocos2d.h"
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/libs/cocos2d/CCConfiguration.h
+c000000004D6357700000000000000A89
+t1298356080
+s2697
+i<OpenGLES/ES1/gl.h>
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/libs/cocos2d/CCDirector.h
+c000000004D63577000000000000041A6
+t1298356080
+s16806
+i"ccConfig.h"
+i"ccTypes.h"
+i"Support/EAGLView.h"
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/libs/cocos2d/CCDrawingPrimitives.h
+c000000004D6357700000000000000B1A
+t1298356080
+s2842
+i<CoreGraphics/CGGeometry.h>
+i<objc/objc.h>
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/libs/cocos2d/CCEaseAction.h
+c000000004D6357700000000000001671
+t1298356080
+s5745
+i"CCIntervalAction.h"
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/libs/cocos2d/CCGrabber.h
+c000000004D63577000000000000005FA
+t1298356080
+s1530
+i<OpenGLES/ES1/gl.h>
+i<OpenGLES/ES1/glext.h>
+i<UIKit/UIKit.h>
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/libs/cocos2d/CCGrid.h
+c000000004D6357700000000000000E50
+t1298356080
+s3664
+i<UIKit/UIKit.h>
+i"CCNode.h"
+i"CCCamera.h"
+i"ccTypes.h"
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/libs/cocos2d/CCGrid3DAction.h
+c000000004D63577000000000000019DF
+t1298356080
+s6623
+i"CCGridAction.h"
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/libs/cocos2d/CCGridAction.h
+c000000004D63577000000000000014A7
+t1298356080
+s5287
+i<UIKit/UIKit.h>
+i"CCIntervalAction.h"
+i"CCInstantAction.h"
+i"CCGrid.h"
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/libs/cocos2d/CCInstantAction.h
+c000000004D6357700000000000001178
+t1298356080
+s4472
+i<UIKit/UIKit.h>
+i"CCAction.h"
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/libs/cocos2d/CCIntervalAction.h
+c000000004D6357700000000000003266
+t1298356080
+s12902
+i"CCNode.h"
+i"CCAction.h"
+i"CCProtocols.h"
+i<sys/time.h>
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/libs/cocos2d/CCLabel.h
+c000000004D6357700000000000000A19
+t1298356080
+s2585
+i"CCTexture2D.h"
+i"CCSprite.h"
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/libs/cocos2d/CCLabelAtlas.h
+c000000004D635770000000000000098E
+t1298356080
+s2446
+i"CCAtlasNode.h"
+i"CCTextureAtlas.h"
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/libs/cocos2d/CCLayer.h
+c000000004D635770000000000000139E
+t1298356080
+s5022
+i<UIKit/UIKit.h>
+i"CCProtocols.h"
+i"CCNode.h"
+i"CCTouchDelegateProtocol.h"
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/libs/cocos2d/CCMenu.h
+c000000004D6357700000000000000AEE
+t1298356080
+s2798
+i<UIKit/UIKit.h>
+i"CCMenuItem.h"
+i"CCLayer.h"
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/libs/cocos2d/CCMenuItem.h
+c000000004D63577000000000000031FC
+t1298356080
+s12796
+i"CCBlockSupport.h"
+i"CCNode.h"
+i"CCProtocols.h"
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/libs/cocos2d/CCMotionStreak.h
+c000000004D6357700000000000000B2A
+t1298356080
+s2858
+i<Foundation/Foundation.h>
+i"CCNode.h"
+i"CCRibbon.h"
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/libs/cocos2d/CCNode.h
+c000000004D6357700000000000003E93
+t1298356080
+s16019
+i<OpenGLES/ES1/gl.h>
+i"CCAction.h"
+i"ccTypes.h"
+i"CCTexture2D.h"
+i"CCProtocols.h"
+i"ccConfig.h"
+i"Support/CCArray.h"
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/libs/cocos2d/CCPVRTexture.h
+c000000004D6357700000000000000CA5
+t1298356080
+s3237
+i<UIKit/UIKit.h>
+i<OpenGLES/ES1/gl.h>
+i<OpenGLES/ES1/glext.h>
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/libs/cocos2d/CCPageTurn3DAction.h
+c000000004D6357700000000000000644
+t1298356080
+s1604
+i"CCGrid3DAction.h"
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/libs/cocos2d/CCPageTurnTransition.h
+c000000004D63577000000000000008F5
+t1298356080
+s2293
+i"CCTransition.h"
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/libs/cocos2d/CCParallaxNode.h
+c000000004D635770000000000000075B
+t1298356080
+s1883
+i"CCNode.h"
+i"Support/ccCArray.h"
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/libs/cocos2d/CCParticleExamples.h
+c000000004D63577000000000000008C1
+t1298356080
+s2241
+i"CCPointParticleSystem.h"
+i"CCQuadParticleSystem.h"
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/libs/cocos2d/CCParticleSystem.h
+c000000004D6357700000000000003694
+t1298356080
+s13972
+i"CCProtocols.h"
+i"CCNode.h"
+i"ccTypes.h"
+i"ccConfig.h"
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/libs/cocos2d/CCPointParticleSystem.h
+c000000004D6357700000000000000762
+t1298356080
+s1890
+i"CCParticleSystem.h"
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/libs/cocos2d/CCProgressTimer.h
+c000000004D6357700000000000000B48
+t1298356080
+s2888
+i<Foundation/Foundation.h>
+i"CCSprite.h"
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/libs/cocos2d/CCProgressTimerActions.h
+c000000004D635770000000000000088D
+t1298356080
+s2189
+i<Foundation/Foundation.h>
+i"CCProgressTimer.h"
+i"CCIntervalAction.h"
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/libs/cocos2d/CCPropertyAction.h
+c000000004D6357700000000000000941
+t1298356080
+s2369
+i<Foundation/Foundation.h>
+i"CCIntervalAction.h"
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/libs/cocos2d/CCProtocols.h
+c000000004D6357700000000000000E35
+t1298356080
+s3637
+i"ccTypes.h"
+i"CCTexture2D.h"
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/libs/cocos2d/CCQuadParticleSystem.h
+c000000004D63577000000000000009A2
+t1298356080
+s2466
+i"CCParticleSystem.h"
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/libs/cocos2d/CCRadialTransition.h
+c000000004D63577000000000000005F2
+t1298356080
+s1522
+i"CCTransition.h"
+i"CCProgressTimer.h"
+i"CCProgressTimerActions.h"
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/libs/cocos2d/CCRenderTexture.h
+c000000004D6357700000000000000A68
+t1298356080
+s2664
+i<Foundation/Foundation.h>
+i"CCNode.h"
+i"CCSprite.h"
+i"Support/OpenGL_Internal.h"
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/libs/cocos2d/CCRibbon.h
+c000000004D6357700000000000000FCE
+t1298356080
+s4046
+i"CCNode.h"
+i"CCTexture2D.h"
+i"CCProtocols.h"
+i<OpenGLES/ES1/gl.h>
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/libs/cocos2d/CCScene.h
+c000000004D6357700000000000000691
+t1298356080
+s1681
+i<UIKit/UIKit.h>
+i"CCNode.h"
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/libs/cocos2d/CCScheduler.h
+c000000004D63577000000000000019FA
+t1298356080
+s6650
+i<Foundation/Foundation.h>
+i"Support/uthash.h"
+i"ccTypes.h"
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/libs/cocos2d/CCSprite.h
+c000000004D6357700000000000002EA9
+t1298356080
+s11945
+i"CCNode.h"
+i"CCProtocols.h"
+i"CCTextureAtlas.h"
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/libs/cocos2d/CCSpriteFrame.h
+c000000004D63577000000000000013F5
+t1298356080
+s5109
+i<Foundation/Foundation.h>
+i"CCNode.h"
+i"CCProtocols.h"
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/libs/cocos2d/CCSpriteFrameCache.h
+c000000004D6357700000000000000FF9
+t1298356080
+s4089
+i<Foundation/Foundation.h>
+i"CCSpriteFrame.h"
+i"CCTexture2D.h"
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/libs/cocos2d/CCSpriteSheet.h
+c000000004D6357700000000000001762
+t1298356080
+s5986
+i"CCNode.h"
+i"CCProtocols.h"
+i"CCTextureAtlas.h"
+i"ccMacros.h"
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/libs/cocos2d/CCTMXLayer.h
+c000000004D6357700000000000001820
+t1298356080
+s6176
+i"CCAtlasNode.h"
+i"CCSpriteSheet.h"
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/libs/cocos2d/CCTMXObjectGroup.h
+c000000004D63577000000000000008ED
+t1298356080
+s2285
+i"CCAtlasNode.h"
+i"CCSpriteSheet.h"
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/libs/cocos2d/CCTMXTiledMap.h
+c000000004D63577000000000000014EC
+t1298356080
+s5356
+i"CCAtlasNode.h"
+i"CCSpriteSheet.h"
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/libs/cocos2d/CCTMXXMLParser.h
+c000000004D63577000000000000015E1
+t1298356080
+s5601
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/libs/cocos2d/CCTexture2D.h
+c000000004D635770000000000000262B
+t1298356080
+s9771
+i<UIKit/UIKit.h>
+i<OpenGLES/ES1/gl.h>
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/libs/cocos2d/CCTextureAtlas.h
+c000000004D6357700000000000001477
+t1298356080
+s5239
+i"CCTexture2D.h"
+i"ccTypes.h"
+i"ccConfig.h"
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/libs/cocos2d/CCTextureCache.h
+c000000004D6357700000000000001303
+t1298356080
+s4867
+i<Foundation/Foundation.h>
+i<CoreGraphics/CGImage.h>
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/libs/cocos2d/CCTileMapAtlas.h
+c000000004D6357700000000000000B72
+t1298356080
+s2930
+i"CCTextureAtlas.h"
+i"CCAtlasNode.h"
+i"Support/TGAlib.h"
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/libs/cocos2d/CCTiledGridAction.h
+c000000004D6357700000000000001A15
+t1298356080
+s6677
+i"CCGridAction.h"
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/libs/cocos2d/CCTouchDelegateProtocol.h
+c000000004D6357700000000000000AC5
+t1298356080
+s2757
+i<UIKit/UIKit.h>
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/libs/cocos2d/CCTouchDispatcher.h
+c000000004D6357700000000000000FC6
+t1298356080
+s4038
+i"CCTouchDelegateProtocol.h"
+i"Support/EAGLView.h"
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/libs/cocos2d/CCTouchHandler.h
+c000000004D6357700000000000000C9C
+t1298356080
+s3228
+i"CCTouchDelegateProtocol.h"
+i"CCTouchDispatcher.h"
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/libs/cocos2d/CCTransition.h
+c000000004D6357700000000000002130
+t1298356080
+s8496
+i"CCScene.h"
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/libs/cocos2d/Support/CCArray.h
+c000000004D6357700000000000000BBB
+t1298356080
+s3003
+i"ccCArray.h"
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/libs/cocos2d/Support/CCFileUtils.h
+c000000004D635770000000000000058C
+t1298356080
+s1420
+i<Foundation/Foundation.h>
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/libs/cocos2d/Support/CCProfiling.h
+c000000004D63577000000000000006E9
+t1298356080
+s1769
+i<Foundation/Foundation.h>
+i<sys/time.h>
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/libs/cocos2d/Support/CGPointExtension.h
+c000000004D6357700000000000001E13
+t1298356080
+s7699
+i<CoreGraphics/CGGeometry.h>
+i<math.h>
+i<objc/objc.h>
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/libs/cocos2d/Support/EAGLView.h
+c000000004D63577000000000000017DD
+t1298356080
+s6109
+i<UIKit/UIKit.h>
+i<OpenGLES/EAGL.h>
+i<OpenGLES/EAGLDrawable.h>
+i<OpenGLES/ES1/gl.h>
+i<OpenGLES/ES1/glext.h>
+i"ESRenderer.h"
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/libs/cocos2d/Support/ESRenderer.h
+c000000004D63577000000000000005FB
+t1298356080
+s1531
+i<QuartzCore/QuartzCore.h>
+i<OpenGLES/EAGL.h>
+i<OpenGLES/EAGLDrawable.h>
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/libs/cocos2d/Support/OpenGL_Internal.h
+c000000004D63577000000000000011A7
+t1298356080
+s4519
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/libs/cocos2d/Support/TGAlib.h
+c000000004D6357700000000000000444
+t1298356080
+s1092
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/libs/cocos2d/Support/ccCArray.h
+c000000004D6357700000000000003095
+t1298356080
+s12437
+i<Foundation/Foundation.h>
+i<stdlib.h>
+i<string.h>
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/libs/cocos2d/Support/uthash.h
+c000000004D635770000000000000FB13
+t1298356080
+s64275
+i<string.h>
+i<stddef.h>
+i<inttypes.h>
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/libs/cocos2d/ccConfig.h
+c000000004D6357700000000000001ABD
+t1298356080
+s6845
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/libs/cocos2d/ccMacros.h
+c000000004D6357700000000000001740
+t1298356080
+s5952
+i<math.h>
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/libs/cocos2d/ccTypes.h
+c000000004D6357700000000000001651
+t1298356080
+s5713
+i<objc/objc.h>
+i<CoreGraphics/CGGeometry.h>
+i<OpenGLES/ES1/gl.h>
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/libs/cocos2d/cocos2d.h
+c000000004D6357700000000000000E62
+t1298356080
+s3682
+i"ccConfig.h"
+i"CCBlockSupport.h"
+i"CCAction.h"
+i"CCCamera.h"
+i"CCCameraAction.h"
+i"CCProtocols.h"
+i"CCNode.h"
+i"CCDirector.h"
+i"CCTouchDispatcher.h"
+i"CCTouchDelegateProtocol.h"
+i"CCInstantAction.h"
+i"CCIntervalAction.h"
+i"CCEaseAction.h"
+i"CCLabel.h"
+i"CCLayer.h"
+i"CCMenu.h"
+i"CCMenuItem.h"
+i"CCParticleSystem.h"
+i"CCPointParticleSystem.h"
+i"CCQuadParticleSystem.h"
+i"CCParticleExamples.h"
+i"CCDrawingPrimitives.h"
+i"CCScene.h"
+i"CCScheduler.h"
+i"CCSprite.h"
+i"CCSpriteFrame.h"
+i"CCSpriteSheet.h"
+i"CCSpriteFrameCache.h"
+i"CCTextureCache.h"
+i"CCTransition.h"
+i"CCTextureAtlas.h"
+i"CCLabelAtlas.h"
+i"CCAtlasNode.h"
+i"CCEaseAction.h"
+i"CCTiledGridAction.h"
+i"CCGrabber.h"
+i"CCGrid.h"
+i"CCGrid3DAction.h"
+i"CCGridAction.h"
+i"CCBitmapFontAtlas.h"
+i"CCParallaxNode.h"
+i"CCActionManager.h"
+i"CCTMXTiledMap.h"
+i"CCTMXLayer.h"
+i"CCTMXObjectGroup.h"
+i"CCTMXXMLParser.h"
+i"CCTileMapAtlas.h"
+i"CCRenderTexture.h"
+i"CCMotionStreak.h"
+i"CCPageTurn3DAction.h"
+i"CCPageTurnTransition.h"
+i"CCTexture2D.h"
+i"CCPVRTexture.h"
+i"CCTouchHandler.h"
+i"CCConfiguration.h"
+i"CCRadialTransition.h"
+i"CCProgressTimerActions.h"
+i"CCPropertyAction.h"
+i"ccTypes.h"
+i"ccMacros.h"
+i"Support/OpenGL_Internal.h"
+i"Support/EAGLView.h"
+i"Support/CCFileUtils.h"
+i"Support/CGPointExtension.h"
+i"Support/ccCArray.h"
+i"Support/CCArray.h"
+i"Support/CCProfiling.h"
+i"CCCompatibility.h"
+
+N/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/main.m
+c000000004D6357700000000000000166
+t1298356080
+s358
+i<UIKit/UIKit.h>
+
+N/var/folders/dt/dtXcFoZKEdWMd7gf44GA3++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Tower_Defense_Prefix-cixmcxnnsnnlarclvzqthpqdcles/Tower_Defense_Prefix.pch.gch
+t1298356229
+s15465680
+
+NResources/Info.plist
+c000000004D635770000000000000038E
+t1298356080
+s910
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies320097600#320097600#0(0"0(0#1#0"32651513917735028#0"0#
+
+CCompileC "build/Tower Defense.build/Debug-iphonesimulator/Tower Defense.build/Objects-normal/i386/Enemy.o" "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/Enemy.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s320097242.706972
+e320097242.849604
+r1
+xCompileC
+xbuild/Tower Defense.build/Debug-iphonesimulator/Tower Defense.build/Objects-normal/i386/Enemy.o
+x/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/Enemy.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@86"Compile /Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/Enemy.m320097242#320097242#0(0"0(0#0#78"/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/Enemy.m8607447328#2375"    cd "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -DCOCOS2D_DEBUG=1 -DCD_DEBUG=1 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -iquote "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Tower Defense.build/Debug-iphonesimulator/Tower Defense.build/Tower Defense-generated-files.hmap" "-I/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Tower Defense.build/Debug-iphonesimulator/Tower Defense.build/Tower Defense-own-target-headers.hmap" "-I/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Tower Defense.build/Debug-iphonesimulator/Tower Defense.build/Tower Defense-all-target-headers.hmap" -iquote "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Tower Defense.build/Debug-iphonesimulator/Tower Defense.build/Tower Defense-project-headers.hmap" -Wall "-F/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Debug-iphonesimulator" "-I/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Debug-iphonesimulator/include" "-I/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Tower Defense.build/Debug-iphonesimulator/Tower Defense.build/DerivedSources/i386" "-I/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Tower Defense.build/Debug-iphonesimulator/Tower Defense.build/DerivedSources" -include /var/folders/dt/dtXcFoZKEdWMd7gf44GA3++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Tower_Defense_Prefix-cixmcxnnsnnlarclvzqthpqdcles/Tower_Defense_Prefix.pch -c "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/Enemy.m" -o "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Tower Defense.build/Debug-iphonesimulator/Tower Defense.build/Objects-normal/i386/Enemy.o"0#
+
+CCompileC "build/Tower Defense.build/Debug-iphonesimulator/Tower Defense.build/Objects-normal/i386/GameScene.o" "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/GameScene.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s320097241.153212
+e320097242.703413
+r1
+xCompileC
+xbuild/Tower Defense.build/Debug-iphonesimulator/Tower Defense.build/Objects-normal/i386/GameScene.o
+x/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/GameScene.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/GameScene.m: In function '-[Game ccTouchEnded:withEvent:]':
+o/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/GameScene.m:58: warning: 'Level' may not respond to '-ccTouchEnded:withEvent:'
+o/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/GameScene.m:58: warning: (Messages without a matching method signature
+o/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/GameScene.m:58: warning: will be assumed to return 'id' and accept
+o/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/GameScene.m:58: warning: '...' as arguments.)
+lSLF07#2@90"Compile /Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/GameScene.m320097241#320097242#0(678"/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/GameScene.m: In function '-[Game ccTouchEnded:withEvent:]':/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/GameScene.m:58: warning: 'Level' may not respond to '-ccTouchEnded:withEvent:'/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/GameScene.m:58: warning: (Messages without a matching method signature/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/GameScene.m:58: warning: will be assumed to return 'id' and accept/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/GameScene.m:58: warning: '...' as arguments.)2(22@53"'Level' may not respond to '-ccTouchEnded:withEvent:'320097242#131#150#0(6@82"/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/GameScene.m320097219#58#0#58#0#26"'*' may not respond to '*'0(13@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)320097242#281#142#0(6@82"/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/GameScene.m320097219#58#0#58#0#0"0(0#0#82"/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/GameScene.m8609051456#2383"    cd "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -DCOCOS2D_DEBUG=1 -DCD_DEBUG=1 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -iquote "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Tower Defense.build/Debug-iphonesimulator/Tower Defense.build/Tower Defense-generated-files.hmap" "-I/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Tower Defense.build/Debug-iphonesimulator/Tower Defense.build/Tower Defense-own-target-headers.hmap" "-I/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Tower Defense.build/Debug-iphonesimulator/Tower Defense.build/Tower Defense-all-target-headers.hmap" -iquote "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Tower Defense.build/Debug-iphonesimulator/Tower Defense.build/Tower Defense-project-headers.hmap" -Wall "-F/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Debug-iphonesimulator" "-I/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Debug-iphonesimulator/include" "-I/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Tower Defense.build/Debug-iphonesimulator/Tower Defense.build/DerivedSources/i386" "-I/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Tower Defense.build/Debug-iphonesimulator/Tower Defense.build/DerivedSources" -include /var/folders/dt/dtXcFoZKEdWMd7gf44GA3++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Tower_Defense_Prefix-cixmcxnnsnnlarclvzqthpqdcles/Tower_Defense_Prefix.pch -c "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/GameScene.m" -o "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Tower Defense.build/Debug-iphonesimulator/Tower Defense.build/Objects-normal/i386/GameScene.o"0#
+
+CCompileC "build/Tower Defense.build/Debug-iphonesimulator/Tower Defense.build/Objects-normal/i386/Level.o" "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/Level.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s320097242.703582
+e320097242.887615
+r1
+xCompileC
+xbuild/Tower Defense.build/Debug-iphonesimulator/Tower Defense.build/Objects-normal/i386/Level.o
+x/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/Level.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/Level.m: In function '-[Level update:]':
+o/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/Level.m:57: warning: 'NSMutableArray' may not respond to '-allObjects'
+o/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/Level.m:57: warning: (Messages without a matching method signature
+o/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/Level.m:57: warning: will be assumed to return 'id' and accept
+o/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/Level.m:57: warning: '...' as arguments.)
+o/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/Level.m: In function '-[Level registerWithTouchDispatcher]':
+o/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/Level.m:75: warning: class 'Level' does not implement the 'CCTargetedTouchDelegate' protocol
+lSLF07#2@86"Compile /Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/Level.m320097242#320097242#0(935"/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/Level.m: In function '-[Level update:]':/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/Level.m:57: warning: 'NSMutableArray' may not respond to '-allObjects'/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/Level.m:57: warning: (Messages without a matching method signature/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/Level.m:57: warning: will be assumed to return 'id' and accept/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/Level.m:57: warning: '...' as arguments.)/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/Level.m: In function '-[Level registerWithTouchDispatcher]':/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/Level.m:75: warning: class 'Level' does not implement the 'CCTargetedTouchDelegate' protocol3(22@49"'NSMutableArray' may not respond to '-allObjects'320097242#112#142#0(6@78"/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/Level.m320097219#57#0#57#0#26"'*' may not respond to '*'0(13@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)320097242#254#138#0(6@78"/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/Level.m320097219#57#0#57#0#0"0(22@71"Class 'Level' does not implement the 'CCTargetedTouchDelegate' protocol320097242#771#164#0(6@78"/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/Level.m320097219#75#0#75#0#45"class '*' does not implement the '*' protocol0(0#0#78"/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/Level.m7310308001941111808#2375"    cd "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -DCOCOS2D_DEBUG=1 -DCD_DEBUG=1 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -iquote "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Tower Defense.build/Debug-iphonesimulator/Tower Defense.build/Tower Defense-generated-files.hmap" "-I/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Tower Defense.build/Debug-iphonesimulator/Tower Defense.build/Tower Defense-own-target-headers.hmap" "-I/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Tower Defense.build/Debug-iphonesimulator/Tower Defense.build/Tower Defense-all-target-headers.hmap" -iquote "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Tower Defense.build/Debug-iphonesimulator/Tower Defense.build/Tower Defense-project-headers.hmap" -Wall "-F/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Debug-iphonesimulator" "-I/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Debug-iphonesimulator/include" "-I/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Tower Defense.build/Debug-iphonesimulator/Tower Defense.build/DerivedSources/i386" "-I/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Tower Defense.build/Debug-iphonesimulator/Tower Defense.build/DerivedSources" -include /var/folders/dt/dtXcFoZKEdWMd7gf44GA3++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Tower_Defense_Prefix-cixmcxnnsnnlarclvzqthpqdcles/Tower_Defense_Prefix.pch -c "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/Level.m" -o "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Tower Defense.build/Debug-iphonesimulator/Tower Defense.build/Objects-normal/i386/Level.o"0#
+
+CCompileC "build/Tower Defense.build/Debug-iphonesimulator/Tower Defense.build/Objects-normal/i386/ReallyBigKaBoomer.o" "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/ReallyBigKaBoomer.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s320097301.308189
+e320097301.491683
+r1
+xCompileC
+xbuild/Tower Defense.build/Debug-iphonesimulator/Tower Defense.build/Objects-normal/i386/ReallyBigKaBoomer.o
+x/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/ReallyBigKaBoomer.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@98"Compile /Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/ReallyBigKaBoomer.m320097301#320097301#0(0"0(0#0#90"/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/ReallyBigKaBoomer.m8602219776#2399"    cd "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -DCOCOS2D_DEBUG=1 -DCD_DEBUG=1 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -iquote "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Tower Defense.build/Debug-iphonesimulator/Tower Defense.build/Tower Defense-generated-files.hmap" "-I/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Tower Defense.build/Debug-iphonesimulator/Tower Defense.build/Tower Defense-own-target-headers.hmap" "-I/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Tower Defense.build/Debug-iphonesimulator/Tower Defense.build/Tower Defense-all-target-headers.hmap" -iquote "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Tower Defense.build/Debug-iphonesimulator/Tower Defense.build/Tower Defense-project-headers.hmap" -Wall "-F/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Debug-iphonesimulator" "-I/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Debug-iphonesimulator/include" "-I/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Tower Defense.build/Debug-iphonesimulator/Tower Defense.build/DerivedSources/i386" "-I/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Tower Defense.build/Debug-iphonesimulator/Tower Defense.build/DerivedSources" -include /var/folders/dt/dtXcFoZKEdWMd7gf44GA3++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Tower_Defense_Prefix-cixmcxnnsnnlarclvzqthpqdcles/Tower_Defense_Prefix.pch -c "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/ReallyBigKaBoomer.m" -o "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Tower Defense.build/Debug-iphonesimulator/Tower Defense.build/Objects-normal/i386/ReallyBigKaBoomer.o"0#
+
+CCompileC "build/Tower Defense.build/Debug-iphonesimulator/Tower Defense.build/Objects-normal/i386/Tower.o" "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/Tower.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s320097301.302920
+e320097301.500302
+r1
+xCompileC
+xbuild/Tower Defense.build/Debug-iphonesimulator/Tower Defense.build/Objects-normal/i386/Tower.o
+x/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/Tower.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/Tower.m: In function '-[Tower initWithPosition:]':
+o/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/Tower.m:27: warning: 'Tower' may not respond to '-loadProperties'
+o/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/Tower.m:27: warning: (Messages without a matching method signature
+o/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/Tower.m:27: warning: will be assumed to return 'id' and accept
+o/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/Tower.m:27: warning: '...' as arguments.)
+o/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/Tower.m: In function '-[Tower fire:]':
+o/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/Tower.m:43: warning: unused variable 'boomer'
+o/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/Tower.m:39: warning: unused variable 'possibleTargets'
+lSLF07#2@86"Compile /Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/Tower.m320097301#320097301#0(997"/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/Tower.m: In function '-[Tower initWithPosition:]':/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/Tower.m:27: warning: 'Tower' may not respond to '-loadProperties'/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/Tower.m:27: warning: (Messages without a matching method signature/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/Tower.m:27: warning: will be assumed to return 'id' and accept/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/Tower.m:27: warning: '...' as arguments.)/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/Tower.m: In function '-[Tower fire:]':/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/Tower.m:43: warning: unused variable 'boomer'/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/Tower.m:39: warning: unused variable 'possibleTargets'4(22@44"'Tower' may not respond to '-loadProperties'320097301#122#137#0(6@78"/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/Tower.m320097219#27#0#27#0#26"'*' may not respond to '*'0(13@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)320097301#259#138#0(6@78"/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/Tower.m320097219#27#0#27#0#0"0(22@24"Unused variable 'boomer'320097301#754#117#0(6@78"/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/Tower.m320097219#43#0#43#0#19"unused variable '*'0(22@33"Unused variable 'possibleTargets'320097301#871#126#0(6@78"/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/Tower.m320097219#39#0#39#0#19"unused variable '*'0(0#0#78"/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/Tower.m7310308001941111808#2375"    cd "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -DCOCOS2D_DEBUG=1 -DCD_DEBUG=1 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -iquote "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Tower Defense.build/Debug-iphonesimulator/Tower Defense.build/Tower Defense-generated-files.hmap" "-I/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Tower Defense.build/Debug-iphonesimulator/Tower Defense.build/Tower Defense-own-target-headers.hmap" "-I/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Tower Defense.build/Debug-iphonesimulator/Tower Defense.build/Tower Defense-all-target-headers.hmap" -iquote "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Tower Defense.build/Debug-iphonesimulator/Tower Defense.build/Tower Defense-project-headers.hmap" -Wall "-F/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Debug-iphonesimulator" "-I/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Debug-iphonesimulator/include" "-I/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Tower Defense.build/Debug-iphonesimulator/Tower Defense.build/DerivedSources/i386" "-I/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Tower Defense.build/Debug-iphonesimulator/Tower Defense.build/DerivedSources" -include /var/folders/dt/dtXcFoZKEdWMd7gf44GA3++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Tower_Defense_Prefix-cixmcxnnsnnlarclvzqthpqdcles/Tower_Defense_Prefix.pch -c "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/Tower.m" -o "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Tower Defense.build/Debug-iphonesimulator/Tower Defense.build/Objects-normal/i386/Tower.o"0#
+
+CCompileC "build/Tower Defense.build/Debug-iphonesimulator/Tower Defense.build/Objects-normal/i386/Tower_DefenseAppDelegate.o" "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/Tower_DefenseAppDelegate.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s320097241.124678
+e320097242.706871
+r1
+xCompileC
+xbuild/Tower Defense.build/Debug-iphonesimulator/Tower Defense.build/Objects-normal/i386/Tower_DefenseAppDelegate.o
+x/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/Tower_DefenseAppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@105"Compile /Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/Tower_DefenseAppDelegate.m320097241#320097242#0(0"0(0#0#97"/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/Tower_DefenseAppDelegate.m7306638926388814848#2413"    cd "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -DCOCOS2D_DEBUG=1 -DCD_DEBUG=1 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -iquote "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Tower Defense.build/Debug-iphonesimulator/Tower Defense.build/Tower Defense-generated-files.hmap" "-I/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Tower Defense.build/Debug-iphonesimulator/Tower Defense.build/Tower Defense-own-target-headers.hmap" "-I/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Tower Defense.build/Debug-iphonesimulator/Tower Defense.build/Tower Defense-all-target-headers.hmap" -iquote "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Tower Defense.build/Debug-iphonesimulator/Tower Defense.build/Tower Defense-project-headers.hmap" -Wall "-F/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Debug-iphonesimulator" "-I/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Debug-iphonesimulator/include" "-I/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Tower Defense.build/Debug-iphonesimulator/Tower Defense.build/DerivedSources/i386" "-I/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Tower Defense.build/Debug-iphonesimulator/Tower Defense.build/DerivedSources" -include /var/folders/dt/dtXcFoZKEdWMd7gf44GA3++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Tower_Defense_Prefix-cixmcxnnsnnlarclvzqthpqdcles/Tower_Defense_Prefix.pch -c "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Classes/Tower_DefenseAppDelegate.m" -o "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Tower Defense.build/Debug-iphonesimulator/Tower Defense.build/Objects-normal/i386/Tower_DefenseAppDelegate.o"0#
+
+CCompileC "build/Tower Defense.build/Debug-iphonesimulator/Tower Defense.build/Objects-normal/i386/main.o" "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/main.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s320049029.301835
+e320049029.400711
+r1
+xCompileC
+xbuild/Tower Defense.build/Debug-iphonesimulator/Tower Defense.build/Objects-normal/i386/main.o
+x/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@77"Compile /Users/edwardloveall/Projects/tower-defense/code/Tower Defense/main.m320049029#320049029#0(0"0(0#0#69"/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/main.m8610491136#2365"    cd "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -DCOCOS2D_DEBUG=1 -DCD_DEBUG=1 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -iquote "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Tower Defense.build/Debug-iphonesimulator/Tower Defense.build/Tower Defense-generated-files.hmap" "-I/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Tower Defense.build/Debug-iphonesimulator/Tower Defense.build/Tower Defense-own-target-headers.hmap" "-I/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Tower Defense.build/Debug-iphonesimulator/Tower Defense.build/Tower Defense-all-target-headers.hmap" -iquote "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Tower Defense.build/Debug-iphonesimulator/Tower Defense.build/Tower Defense-project-headers.hmap" -Wall "-F/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Debug-iphonesimulator" "-I/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Debug-iphonesimulator/include" "-I/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Tower Defense.build/Debug-iphonesimulator/Tower Defense.build/DerivedSources/i386" "-I/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Tower Defense.build/Debug-iphonesimulator/Tower Defense.build/DerivedSources" -include /var/folders/dt/dtXcFoZKEdWMd7gf44GA3++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Tower_Defense_Prefix-cixmcxnnsnnlarclvzqthpqdcles/Tower_Defense_Prefix.pch -c "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/main.m" -o "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Tower Defense.build/Debug-iphonesimulator/Tower Defense.build/Objects-normal/i386/main.o"0#
+
+CCpResource "build/Debug-iphonesimulator/Tower Defense.app/Default.png" Resources/Default.png
+s320049028.228543
+e320049028.285675
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Tower Defense.app/Default.png
+xResources/Default.png
+lSLF07#2@26"Copy Resources/Default.png320049028#320049028#0(0"0(0#0#84"/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Resources/Default.png8597684128#563"    cd "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Resources/Default.png" "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Debug-iphonesimulator/Tower Defense.app"0#
+
+CCpResource "build/Debug-iphonesimulator/Tower Defense.app/Icon.png" Resources/Icon.png
+s320049028.229936
+e320049028.287844
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Tower Defense.app/Icon.png
+xResources/Icon.png
+lSLF07#2@23"Copy Resources/Icon.png320049028#320049028#0(0"0(0#0#81"/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Resources/Icon.png8603187488#560"    cd "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Resources/Icon.png" "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Debug-iphonesimulator/Tower Defense.app"0#
+
+CCpResource "build/Debug-iphonesimulator/Tower Defense.app/enemy.png" Resources/enemy.png
+s320049028.238150
+e320049028.287632
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Tower Defense.app/enemy.png
+xResources/enemy.png
+lSLF07#2@24"Copy Resources/enemy.png320049028#320049028#0(0"0(0#0#82"/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Resources/enemy.png8596107840#561"    cd "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Resources/enemy.png" "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Debug-iphonesimulator/Tower Defense.app"0#
+
+CCpResource "build/Debug-iphonesimulator/Tower Defense.app/fps_images.png" Resources/fps_images.png
+s320049028.229271
+e320049028.286771
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Tower Defense.app/fps_images.png
+xResources/fps_images.png
+lSLF07#2@29"Copy Resources/fps_images.png320049028#320049028#0(0"0(0#0#87"/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Resources/fps_images.png8603433248#566"    cd "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Resources/fps_images.png" "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Debug-iphonesimulator/Tower Defense.app"0#
+
+CCpResource "build/Debug-iphonesimulator/Tower Defense.app/level1.tmx" Resources/level1.tmx
+s320049028.230835
+e320049028.292128
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Tower Defense.app/level1.tmx
+xResources/level1.tmx
+lSLF07#2@25"Copy Resources/level1.tmx320049028#320049028#0(0"0(0#0#83"/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Resources/level1.tmx8604148448#562"    cd "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Resources/level1.tmx" "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Debug-iphonesimulator/Tower Defense.app"0#
+
+CCpResource "build/Debug-iphonesimulator/Tower Defense.app/meta_tiles.png" Resources/meta_tiles.png
+s320049028.232494
+e320049028.289226
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Tower Defense.app/meta_tiles.png
+xResources/meta_tiles.png
+lSLF07#2@29"Copy Resources/meta_tiles.png320049028#320049028#0(0"0(0#0#87"/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Resources/meta_tiles.png8613937888#566"    cd "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Resources/meta_tiles.png" "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Debug-iphonesimulator/Tower Defense.app"0#
+
+CCpResource "build/Debug-iphonesimulator/Tower Defense.app/tmw_desert_spacing.png" Resources/tmw_desert_spacing.png
+s320049028.234635
+e320049028.288355
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Tower Defense.app/tmw_desert_spacing.png
+xResources/tmw_desert_spacing.png
+lSLF07#2@37"Copy Resources/tmw_desert_spacing.png320049028#320049028#0(0"0(0#0#95"/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Resources/tmw_desert_spacing.png8612863840#574"    cd "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Resources/tmw_desert_spacing.png" "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Debug-iphonesimulator/Tower Defense.app"0#
+
+CCpResource "build/Debug-iphonesimulator/Tower Defense.app/towersketch.jpg" Resources/towersketch.jpg
+s320049028.239726
+e320049028.290175
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Tower Defense.app/towersketch.jpg
+xResources/towersketch.jpg
+lSLF07#2@30"Copy Resources/towersketch.jpg320049028#320049028#0(0"0(0#0#88"/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Resources/towersketch.jpg8614577664#567"    cd "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Resources/towersketch.jpg" "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Debug-iphonesimulator/Tower Defense.app"0#
+
+CGenerateDSYMFile "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Debug-iphonesimulator/Tower Defense.app.dSYM" "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Debug-iphonesimulator/Tower Defense.app/Tower Defense"
+s320097302.458733
+e320097302.723618
+r1
+xGenerateDSYMFile
+x/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Debug-iphonesimulator/Tower Defense.app.dSYM
+x/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Debug-iphonesimulator/Tower Defense.app/Tower Defense
+lSLF07#2@131"GenerateDSYMFile "build/Debug-iphonesimulator/Tower Defense.app.dSYM" "build/Debug-iphonesimulator/Tower Defense.app/Tower Defense"320097302#320097302#0(0"0(0#0#122"/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Debug-iphonesimulator/Tower Defense.app/Tower Defense8604711392#479"    cd "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Debug-iphonesimulator/Tower Defense.app/Tower Defense" -o "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Debug-iphonesimulator/Tower Defense.app.dSYM"0#
+
+CLd "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Debug-iphonesimulator/Tower Defense.app/Tower Defense" normal i386
+s320097301.500403
+e320097302.458633
+r1
+xLd
+x/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Debug-iphonesimulator/Tower Defense.app/Tower Defense
+xnormal
+xi386
+lSLF07#2@127"Link /Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Debug-iphonesimulator/Tower Defense.app/Tower Defense320097301#320097302#0(0"0(0#0#0"8022088948776920064#1210"    cd "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense"    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk "-L/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Debug-iphonesimulator" "-F/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Debug-iphonesimulator" -filelist "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Tower Defense.build/Debug-iphonesimulator/Tower Defense.build/Objects-normal/i386/Tower Defense.LinkFileList" -mmacosx-version-min=10.6 -all_load -ObjC -Xlinker -objc_abi_version -Xlinker 2 -framework CoreGraphics -framework Foundation -framework OpenGLES -framework QuartzCore -framework UIKit -framework AudioToolbox -framework OpenAL -lz -framework AVFoundation "-lcocos2d libraries" -o "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Debug-iphonesimulator/Tower Defense.app/Tower Defense"0#
+
+CProcessInfoPlistFile "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Debug-iphonesimulator/Tower Defense.app/Info.plist" Resources/Info.plist
+s320049028.223957
+e320049028.228452
+r1
+xProcessInfoPlistFile
+x/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Debug-iphonesimulator/Tower Defense.app/Info.plist
+xResources/Info.plist
+lSLF07#2@28"Process Resources/Info.plist320049028#320049028#0(0"0(0#0#83"/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Resources/Info.plist8610232352#571"    cd "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility Resources/Info.plist -genpkginfo "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Debug-iphonesimulator/Tower Defense.app/PkgInfo" -expandbuildsettings -format binary -platform iphonesimulator -o "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Debug-iphonesimulator/Tower Defense.app/Info.plist"0#
+
+CProcessPCH /var/folders/dt/dtXcFoZKEdWMd7gf44GA3++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Tower_Defense_Prefix-cixmcxnnsnnlarclvzqthpqdcles/Tower_Defense_Prefix.pch.gch Tower_Defense_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s320049028.292258
+e320049029.301603
+r1
+xProcessPCH
+x/var/folders/dt/dtXcFoZKEdWMd7gf44GA3++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Tower_Defense_Prefix-cixmcxnnsnnlarclvzqthpqdcles/Tower_Defense_Prefix.pch.gch
+xTower_Defense_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@35"Precompile Tower_Defense_Prefix.pch320049028#320049029#0(0"0(0#0#87"/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Tower_Defense_Prefix.pch8612887136#2225"    cd "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -DCOCOS2D_DEBUG=1 -DCD_DEBUG=1 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -iquote "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Tower Defense.build/Debug-iphonesimulator/Tower Defense.build/Tower Defense-generated-files.hmap" "-I/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Tower Defense.build/Debug-iphonesimulator/Tower Defense.build/Tower Defense-own-target-headers.hmap" "-I/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Tower Defense.build/Debug-iphonesimulator/Tower Defense.build/Tower Defense-all-target-headers.hmap" -iquote "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Tower Defense.build/Debug-iphonesimulator/Tower Defense.build/Tower Defense-project-headers.hmap" -Wall "-F/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Debug-iphonesimulator" "-I/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Debug-iphonesimulator/include" "-I/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Tower Defense.build/Debug-iphonesimulator/Tower Defense.build/DerivedSources/i386" "-I/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Tower Defense.build/Debug-iphonesimulator/Tower Defense.build/DerivedSources" -c "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/Tower_Defense_Prefix.pch" -o /var/folders/dt/dtXcFoZKEdWMd7gf44GA3++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Tower_Defense_Prefix-cixmcxnnsnnlarclvzqthpqdcles/Tower_Defense_Prefix.pch.gch0#
+
+CTouch "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Debug-iphonesimulator/Tower Defense.app"
+s320097302.723712
+e320097302.750193
+r1
+xTouch
+x/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Debug-iphonesimulator/Tower Defense.app
+lSLF07#2@114"Touch /Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Debug-iphonesimulator/Tower Defense.app320097302#320097302#0(0"0(0#0#0"8603341248#336"    cd "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c "/Users/edwardloveall/Projects/tower-defense/code/Tower Defense/build/Debug-iphonesimulator/Tower Defense.app"0#
+

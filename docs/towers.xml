@@ -1,0 +1,123 @@
+<?xml version="1.0"?>
+<towers>
+  <tower type="stone">
+    <level number="1">
+      <name>Stone</name>
+      <damage>1</damage>
+      <speed>1</speed>
+      <cost>1</cost>
+      <spriteImageName>stoneTowerLvl1</spriteImageName>
+    </level>
+    <level number="2">
+      <name>Marble</name>
+      <damage>2</damage>
+      <speed>2</speed>
+      <cost>2</cost>
+      <spriteImageName>stoneTowerLvl2</spriteImageName>
+    </level>
+    <level number="3">
+      <name>Obsidian</name>
+      <damage>3</damage>
+      <speed>1</speed>
+      <cost>5</cost>
+      <spriteImageName>stoneTowerLvl3</spriteImageName>
+    </level>
+    <level number="4">
+      <name>Pumice</name>
+      <damage>1.5</damage>
+      <speed>3</speed>
+      <cost>5</cost>
+      <spriteImageName>stoneTowerLvl4</spriteImageName>
+    </level>
+  </tower>
+  <tower type="fire">
+    <level number="1">
+      <name>Fire</name>
+      <damage>1</damage>
+      <speed>1</speed>
+      <cost>1</cost>
+      <spriteImageName>fireTowerLvl1</spriteImageName>
+    </level>
+    <level number="2">
+      <name>Flame</name>
+      <damage>1</damage>
+      <speed>3</speed>
+      <cost>2</cost>
+      <spriteImageName>fireTowerLvl2</spriteImageName>
+    </level>
+    <level number="3">
+      <name>Molten</name>
+      <damage>3</damage>
+      <speed>1</speed>
+      <cost>5</cost>
+      <spriteImageName>fireTowerLvl3</spriteImageName>
+    </level>
+    <level number="4">
+      <name>Flame Thrower</name>
+      <damage>2</damage>
+      <speed>3</speed>
+      <cost>6</cost>
+      <spriteImageName>fireTowerLvl4</spriteImageName>
+    </level>
+  </tower>
+  <tower type="lightening">
+    <level number="1">
+      <name>Shock</name>
+      <damage>1</damage>
+      <speed>1</speed>
+      <cost>1</cost>
+      <spriteImageName>lighteningTowerLvl1</spriteImageName>
+    </level>
+    <level number="2">
+      <name>Burst</name>
+      <damage>2</damage>
+      <speed>2</speed>
+      <cost>2</cost>
+      <spriteImageName>lighteningTowerLvl2</spriteImageName>
+    </level>
+    <level number="3">
+      <name>Lightening</name>
+      <damage>3</damage>
+      <speed>1</speed>
+      <cost>5</cost>
+      <spriteImageName>lighteningTowerLvl3</spriteImageName>
+    </level>
+    <level number="4">
+      <name>Beam</name>
+      <damage>1</damage>
+      <speed>-1</speed> <!-- constant stream -->
+      <cost>5</cost>
+      <spriteImageName>lighteningTowerLvl4</spriteImageName>
+    </level>
+  </tower>
+  <tower type="ice">
+    <level number="1">
+      <name>Snow</name>
+      <damage>1</damage>
+      <speed>1</speed>
+      <cost>1</cost>
+      <spriteImageName>iceTowerLvl1</spriteImageName>
+    </level>
+    <level number="2">
+      <name>Ice</name>
+      <damage>2</damage>
+      <speed>1.5</speed>
+      <cost>2</cost>
+      <spriteImageName>iceTowerLvl2</spriteImageName>
+    </level>
+    <level number="3">
+      <name>Glacier</name>
+      <damage>3</damage>
+      <speed>1</speed>
+      <cost>5</cost>
+      <spriteImageName>iceTowerLvl3</spriteImageName>
+    </level>
+    <level number="4">
+      <name>Icicle</name>
+      <damage>1.5</damage>
+      <speed>3</speed>
+      <cost>5</cost>
+      <spriteImageName>iceTowerLvl4</spriteImageName>
+    </level>
+  </tower>
+</towers>
