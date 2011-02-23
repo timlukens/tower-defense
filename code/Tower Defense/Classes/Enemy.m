@@ -29,7 +29,7 @@
 }
 
 -(void)loadProperties {
-	hp_ = 500;
+	hp_ = 2;
 }
 
 -(void)move {

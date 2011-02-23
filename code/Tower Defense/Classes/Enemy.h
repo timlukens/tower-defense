@@ -23,5 +23,6 @@
 -(CGPoint)tileCoordForPosition:(CGPoint)position;
 -(void)moveTo:(CGPoint)gid;
 -(BOOL)checkMove:(int)gid;
+-(void)loadProperties;
 
 @end

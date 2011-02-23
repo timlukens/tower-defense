@@ -7,13 +7,24 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <libxml/xmlreader.h>
 #import "cocos2d.h"
 #import "Enemy.h"
 
 @interface Tower : CCNode {
 	CCSprite* sprite_;
 	Float32 range_;
+	NSString* towerType_;
+	
+	NSInteger level_;
+	NSString* name_;
+	Float32 damage_;
+	Float32 speed_;
+	Float32 cost_;
+	NSString* spriteImageName_;
 }
+
+@property (nonatomic, readonly) Float32 damage;
 
 -(id)initWithPosition:(CGPoint)position;
 -(Float32)distanceFromEnemy:(Enemy*)enemy;
