@@ -24,7 +24,6 @@
   namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qualifiedName
 	attributes:(NSDictionary *)attributeDict {
 	
-	
 	//top
 	if([elementName isEqualToString:[NSString stringWithFormat:@"%@s", type_]]) {
 		if([BookController sharedController].books)
@@ -52,6 +51,15 @@
 			[aBook.levels setObject:level forKey:[NSString stringWithFormat:@"%d",currentLevel_]];
 		}
 	}
+	
+	//resistence
+	else if([elementName isEqualToString:@"resistence"]) {
+		if(!aBook.resistences)
+			aBook.resistences = [[NSMutableArray alloc] init];
+		
+		if([attributeDict objectForKey:@"type"])
+			currentResistenceType_ = [attributeDict objectForKey:@"type"];
+	}
 }
 
 - (void)parser:(NSXMLParser *)parser foundCharacters:(NSString *)string {
@@ -68,7 +76,10 @@
 		return;
 	
 	if([elementName isEqualToString:type_]) {
-		[[BookController sharedController].books setObject:aBook forKey:[NSString stringWithFormat:@"%@%@", type_, aBook.type]];
+		if([type_ isEqualToString:@"tower"])
+			[[BookController sharedController].books setObject:aBook forKey:[NSString stringWithFormat:@"%@%@", type_, aBook.type]];
+		else
+			[[BookController sharedController].books setObject:aBook forKey:[NSString stringWithFormat:@"%@%@", type_, aBook.name]];
 		
 		[aBook release];
 		aBook = nil;
@@ -78,25 +89,58 @@
 	
 	if([elementName isEqualToString:@"name"]) {
 		name_ = [currentElementValue stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
-		NSMutableArray* level = [aBook.levels objectForKey:[NSString stringWithFormat:@"%d",currentLevel_]];
-		[level insertObject:[currentElementValue stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] atIndex:kNameIndex];
+		if([type_ isEqualToString:@"tower"]) {
+			NSMutableArray* level = [aBook.levels objectForKey:[NSString stringWithFormat:@"%d",currentLevel_]];
+			[level insertObject:[currentElementValue stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] atIndex:kNameIndex];
+		}
+		else
+			aBook.name = name_;
 	}
 	else if([elementName isEqualToString:@"damage"]) {
-		NSMutableArray* level = [aBook.levels objectForKey:[NSString stringWithFormat:@"%d",currentLevel_]];
-		[level insertObject:[currentElementValue stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] atIndex:kDamageIndex];
+		if([type_ isEqualToString:@"tower"]) {
+			NSMutableArray* level = [aBook.levels objectForKey:[NSString stringWithFormat:@"%d",currentLevel_]];
+			[level insertObject:[currentElementValue stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] atIndex:kDamageIndex];
+		}
+		else
+			aBook.damage = [currentElementValue stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
 	}
 	else if([elementName isEqualToString:@"speed"]) {
-		NSMutableArray* level = [aBook.levels objectForKey:[NSString stringWithFormat:@"%d",currentLevel_]];
-		[level insertObject:[currentElementValue stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] atIndex:kSpeedIndex];
+		if([type_ isEqualToString:@"tower"]) {
+			NSMutableArray* level = [aBook.levels objectForKey:[NSString stringWithFormat:@"%d",currentLevel_]];
+			[level insertObject:[currentElementValue stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] atIndex:kSpeedIndex];
+		}
+		else
+			aBook.speed = [currentElementValue stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
 	}
 	else if([elementName isEqualToString:@"cost"]) {
 		NSMutableArray* level = [aBook.levels objectForKey:[NSString stringWithFormat:@"%d",currentLevel_]];
 		[level insertObject:[currentElementValue stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] atIndex:kCostIndex];
 	}
 	else if([elementName isEqualToString:@"spriteImageName"]) {
-		NSMutableArray* level = [aBook.levels objectForKey:[NSString stringWithFormat:@"%d",currentLevel_]];
-		[level insertObject:[currentElementValue stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] atIndex:kSpriteImageNameIndex];
+		if([type_ isEqualToString:@"tower"]) {
+			NSMutableArray* level = [aBook.levels objectForKey:[NSString stringWithFormat:@"%d",currentLevel_]];
+			[level insertObject:[currentElementValue stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] atIndex:kSpriteImageNameIndex];
+		}
+		else
+			aBook.spriteFileName = [currentElementValue stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
 	}
+	else if([elementName isEqualToString:@"resistence"]) {
+		NSString* amount = [currentElementValue stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+		if([currentResistenceType_ isEqualToString:@"stone"])
+		   [aBook.resistences insertObject:amount atIndex:kResistenceStone];
+		else if([currentResistenceType_ isEqualToString:@"fire"])
+			[aBook.resistences insertObject:amount atIndex:kResistenceFire];
+		else if([currentResistenceType_ isEqualToString:@"lightening"])
+			[aBook.resistences insertObject:amount atIndex:kResistenceLightening];
+		else if([currentResistenceType_ isEqualToString:@"ice"])
+			[aBook.resistences insertObject:amount atIndex:kResistenceIce];
+	}
+	else if([elementName isEqualToString:@"attackSound"])
+		aBook.attackSound = [currentElementValue stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+	else if([elementName isEqualToString:@"deathSound"])
+		aBook.deathSound = [currentElementValue stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+	else if([elementName isEqualToString:@"hp"])
+		aBook.hp = [currentElementValue stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
 	
 	[currentElementValue release];
 	currentElementValue = nil;

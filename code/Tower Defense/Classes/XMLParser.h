@@ -17,6 +17,13 @@ enum kLevelPlacements {
 	kSpriteImageNameIndex
 };
 
+enum kResistencesPlacement {
+	kResistenceStone = 0,
+	kResistenceFire,
+	kResistenceLightening,
+	kResistenceIce
+};
+
 @class Book;
 
 @interface XMLParser : NSObject {
@@ -26,6 +33,7 @@ enum kLevelPlacements {
 	NSString* type_;
 	NSInteger currentLevel_;
 	NSString* name_;
+	NSString* currentResistenceType_;
 }
 
 -(XMLParser*)initXMLParser:(NSString*)type;

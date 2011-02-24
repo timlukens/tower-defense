@@ -231,6 +231,7 @@
 		89EAA1031315789C00B7C201 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 89EAA0F91315789C00B7C201 /* Info.plist */; };
 		89EAA1081315793800B7C201 /* XMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EAA1071315793800B7C201 /* XMLParser.m */; };
 		89EAA10B13157A5B00B7C201 /* BookController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EAA10A13157A5B00B7C201 /* BookController.m */; };
+		89FEBDF61316DFB7000D906B /* enemies.xml in Resources */ = {isa = PBXBuildFile; fileRef = 89FEBDF51316DFB7000D906B /* enemies.xml */; };
 		DC6640030F83B3EA000B3E49 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC6640020F83B3EA000B3E49 /* AudioToolbox.framework */; };
 		DC6640050F83B3EA000B3E49 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC6640040F83B3EA000B3E49 /* OpenAL.framework */; };
 		DCCBF1B70F6022AE0040855A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCCBF1B60F6022AE0040855A /* CoreGraphics.framework */; };
@@ -481,6 +482,7 @@
 		89EAA1071315793800B7C201 /* XMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLParser.m; sourceTree = "<group>"; };
 		89EAA10913157A5B00B7C201 /* BookController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookController.h; sourceTree = "<group>"; };
 		89EAA10A13157A5B00B7C201 /* BookController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookController.m; sourceTree = "<group>"; };
+		89FEBDF51316DFB7000D906B /* enemies.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = enemies.xml; sourceTree = "<group>"; };
 		DC6640020F83B3EA000B3E49 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		DC6640040F83B3EA000B3E49 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
 		DCCBF1B60F6022AE0040855A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -886,6 +888,7 @@
 		89EAA0EE1315789C00B7C201 /* data */ = {
 			isa = PBXGroup;
 			children = (
+				89FEBDF51316DFB7000D906B /* enemies.xml */,
 				89EAA0EF1315789C00B7C201 /* level1.tmx */,
 				89EAA0F01315789C00B7C201 /* towers.xml */,
 			);
@@ -1094,6 +1097,7 @@
 				89EAA1011315789C00B7C201 /* tmw_desert_spacing.png in Resources */,
 				89EAA1021315789C00B7C201 /* towersketch.jpg in Resources */,
 				89EAA1031315789C00B7C201 /* Info.plist in Resources */,
+				89FEBDF61316DFB7000D906B /* enemies.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

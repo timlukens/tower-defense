@@ -13,6 +13,14 @@
 
 @synthesize type = type_;
 @synthesize levels = levels_;
+@synthesize resistences = resistences_;
+@synthesize attackSound = attackSound_;
+@synthesize deathSound = deathSound_;
+@synthesize hp = hp_;
+@synthesize name = name_;
+@synthesize damage = damage_;
+@synthesize speed = speed_;
+@synthesize spriteFileName = spriteFileName_;
 
 -(id)init {
 	if( (self = [super init]) ) {

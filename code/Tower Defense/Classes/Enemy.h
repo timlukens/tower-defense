@@ -14,11 +14,17 @@
 	BOOL moving_;
 	BOOL kill_;
 	
+	NSString* enemyType_;
+	NSString* name_;
+	Float32 damage_;
+	Float32 speed_;
+	
 	Float32 hp_;
 }
 
 @property (nonatomic, readwrite) Float32 hp;
 
+-(id)initWithEnemyType:(NSString*)enemyType;
 -(void)move;
 -(CGPoint)tileCoordForPosition:(CGPoint)position;
 -(void)moveTo:(CGPoint)gid;

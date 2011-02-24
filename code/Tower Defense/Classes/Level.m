@@ -47,7 +47,7 @@
 #pragma mark ticks
 
 -(void)gameLogic:(ccTime)dt {
-	Enemy* enemy = [[Enemy node] init];
+	Enemy* enemy = [[Enemy node] initWithEnemyType:@"Peasant"];
 	enemy.position = ccp(spawnPoint_.x, spawnPoint_.y);
 	[enemies_ addObject:enemy];
 	[self addChild:enemy];

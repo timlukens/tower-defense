@@ -8,6 +8,9 @@
 
 #import "Enemy.h"
 #import "GameScene.h"
+#import "XMLParser.h"
+#import "BookController.h"
+#import "Book.h"
 
 #define kEnemyMoveTime 0.2f
 #define kSpriteSize 32.f
@@ -16,10 +19,9 @@
 
 @synthesize hp = hp_;
 
--(id)init {
+-(id)initWithEnemyType:(NSString*)enemyType {
 	if( (self = [super init]) ) {
-		sprite_ = [CCSprite spriteWithFile:@"enemy.png"];
-		[self addChild:sprite_];
+		enemyType_ = enemyType;
 		
 		moving_ = NO;
 		
@@ -29,7 +31,24 @@
 }
 
 -(void)loadProperties {
-	hp_ = 2;
+	NSString* path = [[NSBundle mainBundle] pathForResource:@"enemies" ofType:@"xml"];
+	NSURL* url = [[NSURL alloc] initFileURLWithPath:path];
+	NSXMLParser *xmlParser = [[NSXMLParser alloc] initWithContentsOfURL:url];
+	
+	XMLParser *parser = [[XMLParser alloc] initXMLParser:@"enemy"];
+	[xmlParser setDelegate:parser];
+	[xmlParser parse];
+	
+	NSMutableDictionary* theDict = [BookController sharedController].books;
+	Book* aBook = [theDict objectForKey:[NSString stringWithFormat:@"enemy%@", enemyType_]];
+	
+	name_ = aBook.name;
+	damage_ = [aBook.damage floatValue];
+	speed_ = 1. / [aBook.speed floatValue];
+	hp_ = [aBook.hp floatValue];
+	
+	sprite_ = [CCSprite spriteWithFile:[NSString stringWithFormat:@"%@.png", aBook.spriteFileName]];
+	[self addChild:sprite_];
 }
 
 -(void)move {
@@ -38,7 +57,6 @@
 		Game* scene = [Game gameController];
 		
 		CGPoint tileCoord = [self tileCoordForPosition:self.position];
-		//int tileGid = [scene.level.meta tileGIDAt:tileCoord];
 		int tileGidUp = [scene.level.meta tileGIDAt:CGPointMake(tileCoord.x, tileCoord.y - 1)];
 		int tileGidDown = [scene.level.meta tileGIDAt:CGPointMake(tileCoord.x, tileCoord.y + 1)];
 		int tileGidRight = [scene.level.meta tileGIDAt:CGPointMake(tileCoord.x + 1, tileCoord.y)];
