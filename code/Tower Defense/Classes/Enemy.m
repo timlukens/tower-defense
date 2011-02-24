@@ -95,7 +95,7 @@
 	position.y -= .1;
 	position = [scene.level.meta positionAt:position];
 	
-	id actionMove = [CCMoveTo actionWithDuration:kEnemyMoveTime 
+	id actionMove = [CCMoveTo actionWithDuration:speed_ 
 										position:position];
 	id actionMoveDone = [CCCallFuncN actionWithTarget:self 
 											 selector:@selector(spriteMoveFinished:)];
