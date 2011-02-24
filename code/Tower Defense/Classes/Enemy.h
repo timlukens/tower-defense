@@ -24,7 +24,7 @@
 
 @property (nonatomic, readwrite) Float32 hp;
 
--(id)initWithEnemyType:(NSString*)enemyType;
+-(id)initWithEnemyType:(NSString*)enemyType atPosition:(CGPoint)position;
 -(void)move;
 -(CGPoint)tileCoordForPosition:(CGPoint)position;
 -(void)moveTo:(CGPoint)gid;

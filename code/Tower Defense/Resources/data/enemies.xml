@@ -11,7 +11,7 @@
     <resistence type="ice">2</resistence>
     <attackSound>peasantAttack</attackSound>
     <deathSound>peasantDeath</deathSound>
-    <spriteImageName>enemy</spriteImageName>
+    <spriteImageName>peasant</spriteImageName>
   </enemy>
   <enemy>
     <name>Wolf</name>
@@ -24,7 +24,7 @@
     <resistence type="ice">2</resistence>
     <attackSound>wolfAtrack</attackSound>
     <deathSound>wolfDeath</deathSound>
-    <spriteImageName>enemy</spriteImageName>
+    <spriteImageName>wolf</spriteImageName>
   </enemy>
   <!-- <enemy>
       <name></name>

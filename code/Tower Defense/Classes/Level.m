@@ -47,8 +47,13 @@
 #pragma mark ticks
 
 -(void)gameLogic:(ccTime)dt {
-	Enemy* enemy = [[Enemy node] initWithEnemyType:@"Peasant"];
-	enemy.position = ccp(spawnPoint_.x, spawnPoint_.y);
+	int random = rand() % 2;
+	NSString* kind;
+	if(random)
+		kind = @"Peasant";
+	else
+		kind = @"Wolf";
+	Enemy* enemy = [[Enemy node] initWithEnemyType:kind atPosition:ccp(spawnPoint_.x, spawnPoint_.y)];
 	[enemies_ addObject:enemy];
 	[self addChild:enemy];
 }

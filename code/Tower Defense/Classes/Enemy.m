@@ -14,14 +14,16 @@
 
 #define kEnemyMoveTime 0.2f
 #define kSpriteSize 32.f
+#define kSpriteOffset 32./2.
 
 @implementation Enemy
 
 @synthesize hp = hp_;
 
--(id)initWithEnemyType:(NSString*)enemyType {
+-(id)initWithEnemyType:(NSString*)enemyType atPosition:(CGPoint)position {
 	if( (self = [super init]) ) {
 		enemyType_ = enemyType;
+		self.position = position;
 		
 		moving_ = NO;
 		
@@ -40,6 +42,7 @@
 	hp_ = [aBook.hp floatValue];
 	
 	sprite_ = [CCSprite spriteWithFile:[NSString stringWithFormat:@"%@.png", aBook.spriteFileName]];
+	sprite_.anchorPoint = CGPointMake(0,0);
 	[self addChild:sprite_];
 }
 
