@@ -34,21 +34,12 @@
 -(void)loadProperties {
 	range_ = 90;
 	level_ = 1;
-	
-	NSString* path = [[NSBundle mainBundle] pathForResource:@"towers" ofType:@"xml"];
-	NSURL* url = [[NSURL alloc] initFileURLWithPath:path];
-	NSXMLParser *xmlParser = [[NSXMLParser alloc] initWithContentsOfURL:url];
-	
-	XMLParser *parser = [[XMLParser alloc] initXMLParser:@"tower"];
-	[xmlParser setDelegate:parser];
-	[xmlParser parse];
-	
+
 	NSMutableDictionary* theDict = [BookController sharedController].books;
 	Book* aBook = [theDict objectForKey:[NSString stringWithFormat:@"tower%@", towerType_]];
 	NSMutableArray* theTower = [aBook.levels objectForKey:[NSString stringWithFormat:@"%d", level_]];
 	
 	name_ = [theTower objectAtIndex:kNameIndex];
-	NSString* temp = [theTower objectAtIndex:kDamageIndex];
 	damage_ = [[theTower objectAtIndex:kDamageIndex] floatValue];
 	speed_ = 1. / [[theTower objectAtIndex:kSpeedIndex] floatValue];
 	cost_ = [[theTower objectAtIndex:kCostIndex] floatValue];

@@ -7,6 +7,7 @@
 //
 
 #import "GameScene.h"
+#import "XMLParser.h"
 
 @implementation Game
 
@@ -37,6 +38,22 @@ static Game* gGameScene = nil;
 		self.level = [[[Level node] initWithLevel:1] retain];
 		[self addChild:level_ z:-1];
 		self.isTouchEnabled = YES;
+		
+		NSString* path = [[NSBundle mainBundle] pathForResource:@"towers" ofType:@"xml"];
+		NSURL* url = [[NSURL alloc] initFileURLWithPath:path];
+		NSXMLParser *xmlParser = [[NSXMLParser alloc] initWithContentsOfURL:url];
+		
+		XMLParser *parser = [[XMLParser alloc] initXMLParser:@"tower"];
+		[xmlParser setDelegate:parser];
+		[xmlParser parse];
+		
+		path = [[NSBundle mainBundle] pathForResource:@"enemies" ofType:@"xml"];
+		url = [[NSURL alloc] initFileURLWithPath:path];
+		xmlParser = [[NSXMLParser alloc] initWithContentsOfURL:url];
+		
+		parser = [[XMLParser alloc] initXMLParser:@"enemy"];
+		[xmlParser setDelegate:parser];
+		[xmlParser parse];
 	}
 	gGameScene = self;
 	return self;

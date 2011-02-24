@@ -30,15 +30,7 @@
 	return self;
 }
 
--(void)loadProperties {
-	NSString* path = [[NSBundle mainBundle] pathForResource:@"enemies" ofType:@"xml"];
-	NSURL* url = [[NSURL alloc] initFileURLWithPath:path];
-	NSXMLParser *xmlParser = [[NSXMLParser alloc] initWithContentsOfURL:url];
-	
-	XMLParser *parser = [[XMLParser alloc] initXMLParser:@"enemy"];
-	[xmlParser setDelegate:parser];
-	[xmlParser parse];
-	
+-(void)loadProperties {	
 	NSMutableDictionary* theDict = [BookController sharedController].books;
 	Book* aBook = [theDict objectForKey:[NSString stringWithFormat:@"enemy%@", enemyType_]];
 	

@@ -26,9 +26,8 @@
 	
 	//top
 	if([elementName isEqualToString:[NSString stringWithFormat:@"%@s", type_]]) {
-		if([BookController sharedController].books)
-			[[BookController sharedController].books release];
-		[BookController sharedController].books = [[NSMutableDictionary alloc] init];
+		if(![BookController sharedController].books)
+			[BookController sharedController].books = [[NSMutableDictionary alloc] init];
 	}
 	
 	//type
