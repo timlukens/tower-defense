@@ -14,6 +14,7 @@ enum kLevelPlacements {
 	kDamageIndex,
 	kSpeedIndex,
 	kCostIndex,
+	kRangeIndex,
 	kSpriteImageNameIndex
 };
 

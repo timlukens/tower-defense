@@ -8,6 +8,7 @@
 
 #import "ReallyBigKaBoomer.h"
 #import "GameScene.h"
+#import "GamePersistenceController.h"
 #import "Tower.h"
 
 #define kBoomerTime 0.1f
@@ -49,6 +50,7 @@
 		if(enemy.hp <= 0) {
 			[[[Game gameController] level].enemies removeObject:enemy];
 			[[[Game gameController] level] removeChild:enemy cleanup:NO];
+			[[GamePersistenceController sharedController] addMoney:enemy.worth];
 		}
 	}
 	

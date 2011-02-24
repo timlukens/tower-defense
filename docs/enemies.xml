@@ -5,6 +5,7 @@
     <damage>1</damage>
     <speed>3</speed>
     <hp>3</hp>
+	<worth>1</worth>
     <resistence type="stone">5</resistence>
     <resistence type="fire">4</resistence>
     <resistence type="lightening">3</resistence>
@@ -18,6 +19,7 @@
     <damage>2</damage>
     <speed>5</speed>
     <hp>4</hp>
+	<worth>1</worth>
     <resistence type="stone">5</resistence>
     <resistence type="fire">4</resistence>
     <resistence type="lightening">3</resistence>
@@ -31,6 +33,7 @@
       <damage></damage>
       <speed></speed>
       <hp></hp>
+	  <worth></worth>
       <resistence type="stone"></resistence>
       <resistence type="fire"></resistence>
       <resistence type="lightening"></resistence>

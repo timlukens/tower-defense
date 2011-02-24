@@ -19,6 +19,7 @@
 	NSString* damage_;
 	NSString* speed_;
 	NSString* spriteFileName_;
+	NSString* worth_;
 }
 
 @property (nonatomic, retain) NSString* type;
@@ -31,5 +32,6 @@
 @property (nonatomic, retain) NSString* damage;
 @property (nonatomic, retain) NSString* speed;
 @property (nonatomic, retain) NSString* spriteFileName;
+@property (nonatomic, retain) NSString* worth;
 
 @end

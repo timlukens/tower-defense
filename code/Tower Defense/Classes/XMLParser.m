@@ -115,6 +115,10 @@
 		NSMutableArray* level = [aBook.levels objectForKey:[NSString stringWithFormat:@"%d",currentLevel_]];
 		[level insertObject:[currentElementValue stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] atIndex:kCostIndex];
 	}
+	else if([elementName isEqualToString:@"range"]) {
+		NSMutableArray* level = [aBook.levels objectForKey:[NSString stringWithFormat:@"%d",currentLevel_]];
+		[level insertObject:[currentElementValue stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] atIndex:kRangeIndex];
+	}
 	else if([elementName isEqualToString:@"spriteImageName"]) {
 		if([type_ isEqualToString:@"tower"]) {
 			NSMutableArray* level = [aBook.levels objectForKey:[NSString stringWithFormat:@"%d",currentLevel_]];
@@ -140,6 +144,8 @@
 		aBook.deathSound = [currentElementValue stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
 	else if([elementName isEqualToString:@"hp"])
 		aBook.hp = [currentElementValue stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+	else if([elementName isEqualToString:@"worth"])
+		aBook.worth = [currentElementValue stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
 	
 	[currentElementValue release];
 	currentElementValue = nil;

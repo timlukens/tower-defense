@@ -13,12 +13,12 @@
 #import "Book.h"
 
 #define kEnemyMoveTime 0.2f
-#define kSpriteSize 32.f
-#define kSpriteOffset 32./2.
+#define kSpriteOffset kTileSize/2.
 
 @implementation Enemy
 
 @synthesize hp = hp_;
+@synthesize worth = worth_;
 
 -(id)initWithEnemyType:(NSString*)enemyType atPosition:(CGPoint)position {
 	if( (self = [super init]) ) {
@@ -40,6 +40,7 @@
 	damage_ = [aBook.damage floatValue];
 	speed_ = 1. / [aBook.speed floatValue];
 	hp_ = [aBook.hp floatValue];
+	worth_ = [aBook.worth floatValue];
 	
 	sprite_ = [CCSprite spriteWithFile:[NSString stringWithFormat:@"%@.png", aBook.spriteFileName]];
 	sprite_.anchorPoint = CGPointMake(0,0);

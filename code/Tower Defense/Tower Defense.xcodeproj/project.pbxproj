@@ -234,6 +234,7 @@
 		89FEBDF61316DFB7000D906B /* enemies.xml in Resources */ = {isa = PBXBuildFile; fileRef = 89FEBDF51316DFB7000D906B /* enemies.xml */; };
 		89FEBE5F1316E660000D906B /* peasant.png in Resources */ = {isa = PBXBuildFile; fileRef = 89FEBE5D1316E660000D906B /* peasant.png */; };
 		89FEBE601316E660000D906B /* wolf.png in Resources */ = {isa = PBXBuildFile; fileRef = 89FEBE5E1316E660000D906B /* wolf.png */; };
+		89FEBEEC1316F3F4000D906B /* GamePersistenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FEBEEB1316F3F4000D906B /* GamePersistenceController.m */; };
 		DC6640030F83B3EA000B3E49 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC6640020F83B3EA000B3E49 /* AudioToolbox.framework */; };
 		DC6640050F83B3EA000B3E49 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC6640040F83B3EA000B3E49 /* OpenAL.framework */; };
 		DCCBF1B70F6022AE0040855A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCCBF1B60F6022AE0040855A /* CoreGraphics.framework */; };
@@ -487,6 +488,8 @@
 		89FEBDF51316DFB7000D906B /* enemies.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = enemies.xml; sourceTree = "<group>"; };
 		89FEBE5D1316E660000D906B /* peasant.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = peasant.png; sourceTree = "<group>"; };
 		89FEBE5E1316E660000D906B /* wolf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wolf.png; sourceTree = "<group>"; };
+		89FEBEEA1316F3F4000D906B /* GamePersistenceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamePersistenceController.h; sourceTree = "<group>"; };
+		89FEBEEB1316F3F4000D906B /* GamePersistenceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamePersistenceController.m; sourceTree = "<group>"; };
 		DC6640020F83B3EA000B3E49 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		DC6640040F83B3EA000B3E49 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
 		DCCBF1B60F6022AE0040855A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -603,6 +606,8 @@
 				89EAA0E71315781F00B7C201 /* Book.m */,
 				89EAA10913157A5B00B7C201 /* BookController.h */,
 				89EAA10A13157A5B00B7C201 /* BookController.m */,
+				89FEBEEA1316F3F4000D906B /* GamePersistenceController.h */,
+				89FEBEEB1316F3F4000D906B /* GamePersistenceController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -1126,6 +1131,7 @@
 				89EAA0E81315781F00B7C201 /* Book.m in Sources */,
 				89EAA1081315793800B7C201 /* XMLParser.m in Sources */,
 				89EAA10B13157A5B00B7C201 /* BookController.m in Sources */,
+				89FEBEEC1316F3F4000D906B /* GamePersistenceController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

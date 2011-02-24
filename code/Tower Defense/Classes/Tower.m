@@ -8,14 +8,14 @@
 
 #import "Tower.h"
 #import "GameScene.h"
+#import "GamePersistenceController.h"
 #import "ReallyBigKaBoomer.h"
 #import "XMLParser.h"
 #import "BookController.h"
 #import "Book.h"
 
-#define kSpriteOffset 32./2.
+#define kSpriteOffset kTileSize/2.
 #define kTowerFireTime 0.2f
-
 
 @implementation Tower
 
@@ -26,13 +26,15 @@
 		towerType_ = towerType;
 		
 		[self loadProperties];
+		if(cost_ > [GamePersistenceController sharedController].money)
+			return nil;
+		[[GamePersistenceController sharedController] addMoney:-cost_];
 		[self setup:position];
 	}
 	return self;
 }
 
 -(void)loadProperties {
-	range_ = 90;
 	level_ = 1;
 
 	NSMutableDictionary* theDict = [BookController sharedController].books;
@@ -43,6 +45,7 @@
 	damage_ = [[theTower objectAtIndex:kDamageIndex] floatValue];
 	speed_ = 1. / [[theTower objectAtIndex:kSpeedIndex] floatValue];
 	cost_ = [[theTower objectAtIndex:kCostIndex] floatValue];
+	range_ = kTileSize * [[theTower objectAtIndex:kRangeIndex] floatValue];
 }
 
 -(void)setup:(CGPoint)position {
@@ -56,8 +59,6 @@
 }
 
 -(void)fire:(id)sender {
-	NSMutableArray* possibleTargets = [[NSMutableArray alloc] init];
-	
 	for(Enemy* enemy in [[[Game gameController] level] enemies]) {
 		if([self distanceFromEnemy:enemy] < range_) {
 			[[ReallyBigKaBoomer alloc] initWithTarget:enemy atPosition:self.position withTower:self];

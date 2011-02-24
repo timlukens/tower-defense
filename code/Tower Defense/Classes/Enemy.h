@@ -18,11 +18,12 @@
 	NSString* name_;
 	Float32 damage_;
 	Float32 speed_;
-	
+	Float32 worth_;
 	Float32 hp_;
 }
 
 @property (nonatomic, readwrite) Float32 hp;
+@property (nonatomic, readwrite) Float32 worth;
 
 -(id)initWithEnemyType:(NSString*)enemyType atPosition:(CGPoint)position;
 -(void)move;

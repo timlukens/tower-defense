@@ -7,13 +7,18 @@
 //
 
 #import "GameScene.h"
+#import "GamePersistenceController.h"
 #import "XMLParser.h"
+
+#define kLabelX 400
+#define kLabelY 300
 
 @implementation Game
 
 static Game* gGameScene = nil;
 
 @synthesize level = level_;
+@synthesize moneyLabel = moneyLabel_;
 
 +(id) scene
 {
@@ -39,24 +44,33 @@ static Game* gGameScene = nil;
 		[self addChild:level_ z:-1];
 		self.isTouchEnabled = YES;
 		
-		NSString* path = [[NSBundle mainBundle] pathForResource:@"towers" ofType:@"xml"];
-		NSURL* url = [[NSURL alloc] initFileURLWithPath:path];
-		NSXMLParser *xmlParser = [[NSXMLParser alloc] initWithContentsOfURL:url];
+		[self loadXml];
 		
-		XMLParser *parser = [[XMLParser alloc] initXMLParser:@"tower"];
-		[xmlParser setDelegate:parser];
-		[xmlParser parse];
-		
-		path = [[NSBundle mainBundle] pathForResource:@"enemies" ofType:@"xml"];
-		url = [[NSURL alloc] initFileURLWithPath:path];
-		xmlParser = [[NSXMLParser alloc] initWithContentsOfURL:url];
-		
-		parser = [[XMLParser alloc] initXMLParser:@"enemy"];
-		[xmlParser setDelegate:parser];
-		[xmlParser parse];
+		moneyLabel_ = [CCLabel labelWithString:[NSString stringWithFormat:@"Money: %d", [GamePersistenceController sharedController].money]
+										 fontName:@"Marker Felt" fontSize:16];
+		moneyLabel_.position = ccp(kLabelX, kLabelY);
+		[self addChild:moneyLabel_];
 	}
 	gGameScene = self;
 	return self;
+}
+
+-(void)loadXml {
+	NSString* path = [[NSBundle mainBundle] pathForResource:@"towers" ofType:@"xml"];
+	NSURL* url = [[NSURL alloc] initFileURLWithPath:path];
+	NSXMLParser *xmlParser = [[NSXMLParser alloc] initWithContentsOfURL:url];
+	
+	XMLParser *parser = [[XMLParser alloc] initXMLParser:@"tower"];
+	[xmlParser setDelegate:parser];
+	[xmlParser parse];
+	
+	path = [[NSBundle mainBundle] pathForResource:@"enemies" ofType:@"xml"];
+	url = [[NSURL alloc] initFileURLWithPath:path];
+	xmlParser = [[NSXMLParser alloc] initWithContentsOfURL:url];
+	
+	parser = [[XMLParser alloc] initXMLParser:@"enemy"];
+	[xmlParser setDelegate:parser];
+	[xmlParser parse];
 }
 
 -(void) registerWithTouchDispatcher

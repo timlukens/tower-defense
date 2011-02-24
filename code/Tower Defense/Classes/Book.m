@@ -21,6 +21,7 @@
 @synthesize damage = damage_;
 @synthesize speed = speed_;
 @synthesize spriteFileName = spriteFileName_;
+@synthesize worth = worth_;
 
 -(id)init {
 	if( (self = [super init]) ) {

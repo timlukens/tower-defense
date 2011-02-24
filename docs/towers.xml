@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
 <towers>
   <tower type="stone">
     <level number="1">
@@ -8,6 +6,7 @@
       <damage>1</damage>
       <speed>1</speed>
       <cost>1</cost>
+	  <range>3</range>
       <spriteImageName>stoneTowerLvl1</spriteImageName>
     </level>
     <level number="2">
@@ -15,6 +14,7 @@
       <damage>2</damage>
       <speed>2</speed>
       <cost>2</cost>
+	  <range>3</range>
       <spriteImageName>stoneTowerLvl2</spriteImageName>
     </level>
     <level number="3">
@@ -22,6 +22,7 @@
       <damage>3</damage>
       <speed>1</speed>
       <cost>5</cost>
+	  <range>3</range>
       <spriteImageName>stoneTowerLvl3</spriteImageName>
     </level>
     <level number="4">
@@ -29,6 +30,7 @@
       <damage>1.5</damage>
       <speed>3</speed>
       <cost>5</cost>
+	  <range>3</range>
       <spriteImageName>stoneTowerLvl4</spriteImageName>
     </level>
   </tower>
@@ -38,6 +40,7 @@
       <damage>1</damage>
       <speed>1</speed>
       <cost>1</cost>
+	  <range>3</range>
       <spriteImageName>fireTowerLvl1</spriteImageName>
     </level>
     <level number="2">
@@ -45,6 +48,7 @@
       <damage>1</damage>
       <speed>3</speed>
       <cost>2</cost>
+	  <range>3</range>
       <spriteImageName>fireTowerLvl2</spriteImageName>
     </level>
     <level number="3">
@@ -52,6 +56,7 @@
       <damage>3</damage>
       <speed>1</speed>
       <cost>5</cost>
+	  <range>3</range>
       <spriteImageName>fireTowerLvl3</spriteImageName>
     </level>
     <level number="4">
@@ -59,6 +64,7 @@
       <damage>2</damage>
       <speed>3</speed>
       <cost>6</cost>
+	  <range>3</range>
       <spriteImageName>fireTowerLvl4</spriteImageName>
     </level>
   </tower>
@@ -68,6 +74,7 @@
       <damage>1</damage>
       <speed>1</speed>
       <cost>1</cost>
+	  <range>3</range>
       <spriteImageName>lighteningTowerLvl1</spriteImageName>
     </level>
     <level number="2">
@@ -75,6 +82,7 @@
       <damage>2</damage>
       <speed>2</speed>
       <cost>2</cost>
+	  <range>3</range>
       <spriteImageName>lighteningTowerLvl2</spriteImageName>
     </level>
     <level number="3">
@@ -82,6 +90,7 @@
       <damage>3</damage>
       <speed>1</speed>
       <cost>5</cost>
+	  <range>3</range>
       <spriteImageName>lighteningTowerLvl3</spriteImageName>
     </level>
     <level number="4">
@@ -89,6 +98,7 @@
       <damage>1</damage>
       <speed>-1</speed> <!-- constant stream -->
       <cost>5</cost>
+	  <range>3</range>
       <spriteImageName>lighteningTowerLvl4</spriteImageName>
     </level>
   </tower>
@@ -98,6 +108,7 @@
       <damage>1</damage>
       <speed>1</speed>
       <cost>1</cost>
+	  <range>3</range>
       <spriteImageName>iceTowerLvl1</spriteImageName>
     </level>
     <level number="2">
@@ -105,6 +116,7 @@
       <damage>2</damage>
       <speed>1.5</speed>
       <cost>2</cost>
+	  <range>3</range>
       <spriteImageName>iceTowerLvl2</spriteImageName>
     </level>
     <level number="3">
@@ -112,6 +124,7 @@
       <damage>3</damage>
       <speed>1</speed>
       <cost>5</cost>
+	  <range>3</range>
       <spriteImageName>iceTowerLvl3</spriteImageName>
     </level>
     <level number="4">
@@ -119,6 +132,7 @@
       <damage>1.5</damage>
       <speed>3</speed>
       <cost>5</cost>
+	  <range>3</range>
       <spriteImageName>iceTowerLvl4</spriteImageName>
     </level>
   </tower>

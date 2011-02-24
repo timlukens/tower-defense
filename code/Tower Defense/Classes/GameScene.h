@@ -10,13 +10,18 @@
 #import "cocos2d.h"
 #import "Level.h"
 
+#define kTileSize 32.
+
 @interface Game : CCLayer {	
 	Level* level_;
+	CCLabel* moneyLabel_;
 }
 
 @property (readwrite, retain) Level* level;
+@property (nonatomic, retain) CCLabel* moneyLabel;
 
 +(id) scene;
 +(Game*)gameController;
+-(void)loadXml;
 
 @end

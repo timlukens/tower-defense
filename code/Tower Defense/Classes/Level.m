@@ -10,8 +10,7 @@
 #import "Enemy.h"
 #import "Tower.h"
 
-#define kEnemySpawnTime 5.f
-
+#define kEnemySpawnTime 1.f
 
 @implementation Level
 
@@ -97,9 +96,13 @@
 		//if tower available
 		NSString *available = [properties valueForKey:@"TowerAvailable"];
 		if (available && [available compare:@"true"] == NSOrderedSame) {
-			Tower* tower = [[[Tower alloc] initWithPosition:[meta_ positionAt:tileCoord] withTower:@"stone"] retain];
-			[towers_ addObject:tower];
-			[self addChild:tower];
+			Tower* tower = [[Tower alloc] initWithPosition:[meta_ positionAt:tileCoord] withTower:@"stone"];
+			if(tower) {
+				[towers_ addObject:tower];
+				[self addChild:tower];
+			}
+			else
+				[tower release];
 		}
 	}
 }
