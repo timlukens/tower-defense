@@ -3,3 +3,13 @@ For committing to git hub:
 git add .
 git commit -am "Message for everyone to see"
 git push origin master
+
+
+
+
+For pulling from everyone else:
+
+git pull <name> master
+
+Tim: tim
+Ed: ed

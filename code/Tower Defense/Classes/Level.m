@@ -10,7 +10,7 @@
 #import "Enemy.h"
 #import "Tower.h"
 
-#define kEnemySpawnTime 1.0f
+#define kEnemySpawnTime 5.f
 
 
 @implementation Level
@@ -75,13 +75,11 @@
 													 priority:0 swallowsTouches:YES];
 }
 
--(BOOL) ccTouchBegan:(UITouch *)touch withEvent:(UIEvent *)event
-{
+-(BOOL) ccTouchBegan:(UITouch *)touch withEvent:(UIEvent *)event {
 	return YES;
 }
 
--(void) ccTouchEnded:(UITouch *)touch withEvent:(UIEvent *)event
-{
+-(void) ccTouchEnded:(UITouch *)touch withEvent:(UIEvent *)event {
     CGPoint touchLocation = [touch locationInView: [touch view]];		
     touchLocation = [[CCDirector sharedDirector] convertToGL: touchLocation];
     touchLocation = [self convertToNodeSpace:touchLocation];
@@ -94,7 +92,7 @@
 		//if tower available
 		NSString *available = [properties valueForKey:@"TowerAvailable"];
 		if (available && [available compare:@"true"] == NSOrderedSame) {
-			Tower* tower = [[[Tower alloc] initWithPosition:[meta_ positionAt:tileCoord]] retain];
+			Tower* tower = [[[Tower alloc] initWithPosition:[meta_ positionAt:tileCoord] withTower:@"stone"] retain];
 			[towers_ addObject:tower];
 			[self addChild:tower];
 		}

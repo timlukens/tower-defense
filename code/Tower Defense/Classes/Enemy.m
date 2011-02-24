@@ -14,14 +14,22 @@
 
 @implementation Enemy
 
+@synthesize hp = hp_;
+
 -(id)init {
 	if( (self = [super init]) ) {
 		sprite_ = [CCSprite spriteWithFile:@"enemy.png"];
 		[self addChild:sprite_];
 		
 		moving_ = NO;
+		
+		[self loadProperties];
 	}
 	return self;
+}
+
+-(void)loadProperties {
+	hp_ = 2;
 }
 
 -(void)move {

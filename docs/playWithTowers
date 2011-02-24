@@ -1,0 +1,14 @@
+Fun things to test xml parser:
+
+Tower.m line 36
+	change level_ = to anything 1-4
+	
+Level.m line 95
+	change withTower:@"stone" to:
+		stone
+		fire
+		lightening
+		ice
+		
+
+right now the only thing the tower is really implementing is damage and speed, so feel free to play around with those properties in the xml file (./code/Tower Defense/Resources/data/towers.xml)

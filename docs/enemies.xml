@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<enemies>
+  <enemy>
+    <name>Peasant</name>
+    <damage>1</damage>
+    <speed>3</speed>
+    <strength type="stone">0</strength>
+    <strength type="fire">0</strength>
+    <strength type="lightening">0</strength>
+    <strength type="ice">0</strength>
+    <weakness type="stone">4</weakness>
+    <weakness type="fire">6</weakness>
+    <weakness type="lightening">6</weakness>
+    <weakness type="ice">3</weakness>
+    <attackSound>peasantAttack</attackSound>
+    <deathSound>peasantDeath</deathSound>
+    <spriteImageName>peasant</spriteImageName>
+  </enemy>
+  <enemy>
+    <name>Wolf</name>
+    <damage>2</damage>
+    <speed>5</speed>
+    <strength type="stone">0</strength>
+    <strength type="fire">5</strength>
+    <strength type="lightening">0</strength>
+    <strength type="ice">5</strength>
+    <weakness type="stone">4</weakness>
+    <weakness type="fire">6</weakness>
+    <weakness type="lightening">4</weakness>
+    <weakness type="ice">0</weakness>
+    <attackSound>wolfAtrack</attackSound>
+    <deathSound>wolfDeath</deathSound>
+    <spriteImageName>wolf</spriteImageName>
+  </enemy>
+  <!-- <enemy>
+      <name></name>
+      <damage></damage>
+      <speed></speed>
+      <strength type="stone"></strength>
+      <strength type="fire"></strength>
+      <strength type="lightening"></strength>
+      <strength type="ice"></strength>
+      <weakness type="stone"></weakness>
+      <weakness type="fire"></weakness>
+      <weakness type="lightening"></weakness>
+      <weakness type="ice"></weakness>
+      <attackSound></attackSound>
+      <deathSound></deathSound>
+      <spriteImageName></spriteImageName>
+    </enemy> -->
+</enemies>

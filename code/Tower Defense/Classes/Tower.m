@@ -9,30 +9,59 @@
 #import "Tower.h"
 #import "GameScene.h"
 #import "ReallyBigKaBoomer.h"
+#import "XMLParser.h"
+#import "BookController.h"
+#import "Book.h"
 
 #define kSpriteOffset 32./2.
-#define kTowerFireTime 2.f
+#define kTowerFireTime 0.2f
 
 
 @implementation Tower
 
--(id)initWithPosition:(CGPoint)position {
+@synthesize damage = damage_;
+
+-(id)initWithPosition:(CGPoint)position withTower:(NSString*)towerType {
 	if( (self = [super init]) ) {
-		sprite_ = [CCSprite spriteWithFile:@"towersketch.jpg"];
-		sprite_.scale = (1./5.25);
-		[self addChild:sprite_];
-		
-		self.position = CGPointMake(position.x + kSpriteOffset, position.y + kSpriteOffset);
+		towerType_ = towerType;
 		
 		[self loadProperties];
-		
-		[self schedule:@selector(fire:) interval:kTowerFireTime];
+		[self setup:position];
 	}
 	return self;
 }
 
 -(void)loadProperties {
 	range_ = 90;
+	level_ = 1;
+	
+	NSString* path = [[NSBundle mainBundle] pathForResource:@"towers" ofType:@"xml"];
+	NSURL* url = [[NSURL alloc] initFileURLWithPath:path];
+	NSXMLParser *xmlParser = [[NSXMLParser alloc] initWithContentsOfURL:url];
+	
+	XMLParser *parser = [[XMLParser alloc] initXMLParser:@"tower"];
+	[xmlParser setDelegate:parser];
+	[xmlParser parse];
+	
+	NSMutableDictionary* theDict = [BookController sharedController].books;
+	Book* aBook = [theDict objectForKey:[NSString stringWithFormat:@"tower%@", towerType_]];
+	NSMutableArray* theTower = [aBook.levels objectForKey:[NSString stringWithFormat:@"%d", level_]];
+	
+	name_ = [theTower objectAtIndex:kNameIndex];
+	NSString* temp = [theTower objectAtIndex:kDamageIndex];
+	damage_ = [[theTower objectAtIndex:kDamageIndex] floatValue];
+	speed_ = 1. / [[theTower objectAtIndex:kSpeedIndex] floatValue];
+	cost_ = [[theTower objectAtIndex:kCostIndex] floatValue];
+}
+
+-(void)setup:(CGPoint)position {
+	[self schedule:@selector(fire:) interval:speed_];
+	
+	sprite_ = [CCSprite spriteWithFile:@"towersketch.jpg"];
+	sprite_.scale = (1./5.25);
+	[self addChild:sprite_];
+	
+	self.position = CGPointMake(position.x + kSpriteOffset, position.y + kSpriteOffset);
 }
 
 -(void)fire:(id)sender {
@@ -40,7 +69,8 @@
 	
 	for(Enemy* enemy in [[[Game gameController] level] enemies]) {
 		if([self distanceFromEnemy:enemy] < range_) {
-			ReallyBigKaBoomer* boomer = [[ReallyBigKaBoomer alloc] initWithTarget:enemy atPosition:self.position];
+			[[ReallyBigKaBoomer alloc] initWithTarget:enemy atPosition:self.position withTower:self];
+			break;
 		}
 	}
 }

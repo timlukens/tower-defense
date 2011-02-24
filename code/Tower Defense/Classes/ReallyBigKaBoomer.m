@@ -8,12 +8,13 @@
 
 #import "ReallyBigKaBoomer.h"
 #import "GameScene.h"
+#import "Tower.h"
 
 #define kBoomerTime 0.1f
 
 @implementation ReallyBigKaBoomer
 
--(id)initWithTarget:(Enemy*)enemy atPosition:(CGPoint)position {
+-(id)initWithTarget:(Enemy*)enemy atPosition:(CGPoint)position withTower:(Tower*)tower {
 	if( (self=[super init]) ) {
 		enemy_ = enemy;
 		
@@ -25,6 +26,8 @@
 		[self addChild:sprite_];
 		[[[Game gameController] level] addChild:self];
 		
+		[self loadProperties:tower];
+		
 		id actionMove = [CCMoveTo actionWithDuration:kBoomerTime 
 											position:enemy.position];
 		id actionMoveDone = [CCCallFuncN actionWithTarget:self 
@@ -34,9 +37,21 @@
 	return self;
 }
 
+-(void)loadProperties:(Tower*)tower {
+	damage_ = tower.damage;
+}
+
 -(void)spriteMoveFinished:(id)sender {
-	[[[Game gameController] level].enemies removeObject:enemy_];
-	[[[Game gameController] level] removeChild:enemy_ cleanup:NO];
+	for(Enemy* enemy in [[[Game gameController] level].enemies allObjects]) {
+		if(enemy == enemy_)
+			enemy.hp -= damage_;
+			
+		if(enemy.hp <= 0) {
+			[[[Game gameController] level].enemies removeObject:enemy];
+			[[[Game gameController] level] removeChild:enemy cleanup:NO];
+		}
+	}
+	
 	[[[Game gameController] level] removeChild:self cleanup:YES];
 }
 
