@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <libxml/xmlreader.h>
 #import "cocos2d.h"
 #import "Enemy.h"
 
